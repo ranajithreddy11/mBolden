@@ -6,9 +6,16 @@ import heroImage from '../assets/LandingPageImages/hero-image.png';
 import captureImage from '../assets/LandingPageImages/capture-image.png';
 import pastClientLogos from '../assets/LandingPageImages/PastClientLogos.png';
 
+//Import components
+import Header from './../components/Header';
+import Footer from './../components/Footer';
+
 const LandingPage = () => {
     return (
         <div className="landing-page">
+            {/* Header */}
+            <Header />
+
             {/* Hero Section */}
             <div className="hero-section">
                 <div className="hero-content">
@@ -58,6 +65,9 @@ const LandingPage = () => {
                 </div>
             </div>
             <img src={pastClientLogos} alt="Team" className="past-client-logo-image" />
+
+             {/* Footer */}
+             <Footer />
         </div>
     );
 };
