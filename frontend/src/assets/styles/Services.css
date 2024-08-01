@@ -1,110 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Stara:wght@600&display=swap'); /* Ensure this URL is correct */
+
 
 .services-section {
-    margin-bottom: 40px;
-  }
-  
-  .services-section h1 {
-    padding-left: 60px;
-    margin-bottom: 20px;
-    color: #263238;
-    font-family: 'Stara', sans-serif;
-    font-size: 72px;
-    line-height: 85px;
-    font-weight: 600;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  }
-  
-  .services-content {
-    display: flex;
-    justify-content: center;
-    background: #F7F7F2;
-    align-items: stretch;
-    padding: 20px;
-  }
-  
-  .left-column,.center-column, .right-column {
-    flex: 1;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .center-column{
-    padding: 40px 0;
-  }
-  
-  
-  .service-item {
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .service-icon {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-  
-  .service-text {
-    text-align: left;
-  }
-  
-  .service-center {
-    background: #B92129;
-    color: #FDFFFC;
     text-align: center;
-    border-radius: 80px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px;
-    padding: 20px;
-  } 
+    padding: 50px 0;
+    background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
 
-  .service-center h2{
-    font-family: 'Stara', sans-serif;
-    font-size: 45p÷x;
-    line-height: 65px;
-    font-weight: 600;
-  }
-  
-  .service-item h2 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    font-family: 'Stara', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
+}
+
+.services-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
     font-weight: 800;
+    line-height: 61.6px;
+    text-align: center;
     color: #2F5E8F;
-  }
-  
-  .service-item p {
-    font-family: 'Stara', sans-serif;
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 200;
-    color: #263238;
-  }
-  
-  @media (max-width: 768px) {
-    .services-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .left-column, .center-column, .right-column {
-      margin: 10px 0;
-    }
-  
-    .service-center {
-      flex-basis: auto;
-    }
-  }
-  
+    margin-bottom: 20px;
+}
+
+.services-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 57px;
+    text-align: center;
+    color: #030701;
+
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 70px;
+}
+
+.service {
+    max-width: 350px;
+    margin: 25px;
+    text-align: center;
+}
+
+.service img {
+    width: 100px;
+    height: 100px;
+}
+
+.service h3 {
+    margin: 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35.2px;
+    text-align: center;
+    color: #0F172A;
+}
+
+.service p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    color: #0F172A;
+}
+
+/* Mission Section */
+.mission-section {
+    background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.mission-section h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 61.6px;
+    text-align: center;
+    color: #2F5E8F;
+    margin-bottom: 20px;
+}
+
+.mission-statements {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 60px;
+}
+
+.mission {
+    width: 30%;
+    max-width: 350px;
+    margin: 20px;
+    text-align: center;
+}
+
+.mission img {
+    width: 100px;
+    height: 100px;
+}
+
+.mission p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: #0F172A;
+
+}
