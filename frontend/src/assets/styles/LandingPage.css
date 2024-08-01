@@ -10,11 +10,16 @@ main {
 /* Hero Section */
 .hero-section {
     display: flex;
-    /* width: 75%; */
     justify-content: space-between;
+    align-items: center;
     padding: 50px;
-    background-color: #2F5E8F;
-    border-radius: 10px;
+    background-image: url('../LandingPageImages/BackgroundHeadImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 520px;
+    /* border-radius: 10px; */
+    color: #ffffff;
 }
 
 .hero-content {
@@ -46,7 +51,22 @@ main {
 }
 
 .hero-image {
-    max-width: 35%;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 30px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
 }
 
 /* Capture Section */
@@ -71,7 +91,7 @@ main {
 }
 
 .capture-content p {
-    margin: 20px 0;
+    margin: 30px 0;
     font-size: 1rem;
     color: #333;
 }
@@ -99,7 +119,7 @@ main {
     font-size: 3rem;
     color: #263238;
     /* text-align: left; */
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .testimonials {
@@ -132,7 +152,12 @@ main {
 }
 
 .past-client-logo-image {
-    width: 100%;
+    width: 20%;
+    padding: 20px;
+    margin-right: 30px;
+}
+.past-client-logo4-image {
+    width: 20%;
 }
 
 .end-section-content {
