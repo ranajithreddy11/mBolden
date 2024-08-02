@@ -17,10 +17,10 @@ const Header = () => {
                     <Link to="/">mBolden</Link>
                 </div>
                 <nav className={`header-nav ${isMenuOpen ? 'open' : ''}`}>
-                    <Link to="/" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
+                    <Link to="/about" onClick={() => setIsMenuOpen(false)}>ABOUT</Link>
                     <Link to="/services" onClick={() => setIsMenuOpen(false)}>SERVICES</Link>
                     <Link to="/insights" onClick={() => setIsMenuOpen(false)}>INSIGHTS</Link>
-                    <Link to="/" onClick={() => setIsMenuOpen(false)}>CAPTURE</Link>
+                    <Link to="/capture" onClick={() => setIsMenuOpen(false)}>CAPTURE</Link>
                     <Link to="/contact" onClick={() => setIsMenuOpen(false)}>CONTACT</Link>
                 </nav>
                 <div className="hamburger" onClick={toggleMenu}>

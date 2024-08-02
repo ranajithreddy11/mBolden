@@ -23,9 +23,9 @@ const Footer = () => {
                         <Link to="/">Terms</Link>
                         <Link to="/">Privacy</Link>
                         <Link to="/">Support</Link>
-                        <Link to="/">About</Link>
+                        <Link to="/about">About</Link>
                         <Link to="/">Resources</Link>
-                        <Link to="/">Contact</Link>
+                        <Link to="/contact">Contact</Link>
                     </nav>
                 </div>
                 <div className="footer-social">

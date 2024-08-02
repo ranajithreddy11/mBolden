@@ -6,7 +6,6 @@ const LandingPage = () => {
         <div>
             <main>
                 <h1>Landing Page</h1>
-                <h2>mBolden</h2>
             </main>
         </div>
     );
