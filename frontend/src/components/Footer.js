@@ -14,10 +14,10 @@ const Footer = () => {
                 </div>
                 <div className="footer-nav-container">
                     <div className="footer-copyright">
-                         <p>
+                         <div>
                             <span class="logo">mBolden</span>
                             <span class="copyright"> @ 2023. All rights reserved.</span>
-                        </p>
+                        </div>
                     </div>
                     <nav className="footer-nav">
                         <Link to="/">Terms</Link>

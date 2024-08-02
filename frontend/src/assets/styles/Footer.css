@@ -1,46 +1,45 @@
 .footer {
     background-color: #2F5E8F;
-    padding: 40px 0px 40px 0px;
+    padding: 4% 5%;
 }
 
 .footer-logo {
     text-align: center;
 }
 
-.footer-logo a{
+.footer-logo a {
     font-family: 'Anton', sans-serif;
-    font-size: 80px;
+    font-size: 5rem; 
     font-weight: 400;
-    line-height: 120.43px;
+    line-height: 7.527rem; 
     text-decoration: none;
     color: #FDFFFC;
 }
 
-.footer-nav-container{
+.footer-nav-container {
     display: flex;
-    padding: 0px 80px;
+    padding: 2% 0px;
 }
 
-.footer-copyright .logo{
+.footer-copyright .logo {
     font-family: 'Roboto', sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem; /* 28px */
     font-weight: 500;
-    line-height: 30.8px;
+    line-height: 1.925rem; /* 30.8px */
     color: #ffffff;
 }
 
 .footer-copyright .copyright {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.75rem; /* 28px */
     color: #ffffff;
 }
 
 .footer-nav {
     display: flex;
     gap: 24px;
-    padding: 12px 0px;
     margin-left: auto;
 }
 
@@ -48,18 +47,19 @@
     color: #ffffff;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem; /* 20px */
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.75rem; /* 28px */
 }
 
 .footer-nav a:hover {
     color: #F9530F;
 }
-.footer-social{
+
+.footer-social {
     display: flex;
-    padding-right: 80px;
 }
+
 .social {
     display: flex;
     gap: 20px;
@@ -69,4 +69,41 @@
 .footer-social img {
     width: 48px;
     height: 48px;
+}
+
+@media (max-width: 768px) {
+    
+    .footer-logo {
+        display: none;
+    }
+
+    .footer-copyright .logo, .footer-copyright .copyright {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .footer-copyright .copyright{
+        font-size: 0.9rem; 
+        line-height: 1rem;
+    }
+
+    .footer-nav-container {
+        display: block;
+        padding: 0px;
+    }
+
+    .footer-social {
+        display: none;
+    }
+
+    .footer-nav {
+        padding: 10px 0;
+        gap:0px;
+        justify-content: space-between;
+    }
+    
+    .footer-nav a {
+        font-size: 0.9rem; 
+        line-height: 1rem;
+    }
 }
