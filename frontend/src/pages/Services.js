@@ -14,8 +14,10 @@ const Services = () => {
     <div className="container">
             {/* Our Services Section */}
             <section className="services-section">
-                <h2>Our Services</h2>
-                <p>We align and elevate, unleashing the potential inside your company.</p>
+                <div className="section-heading">
+                    <h2>Our Services</h2>
+                    <p>We align and elevate, unleashing the potential inside your company.</p>
+                </div>
                 <div className="services">
                     <div className="service">
                         <img src={Planning} alt="Strategic Planning" />
@@ -42,7 +44,9 @@ const Services = () => {
             
             {/* Our Mission Section */}
             <section className="mission-section">
-                <h2>Our Mission</h2>
+                <div className="section-heading">
+                    <h2>Our Mission</h2>
+                </div>
                 <div className="mission-statements">
                     <div className="mission">
                         <img src={Team} alt="Begin with you" />

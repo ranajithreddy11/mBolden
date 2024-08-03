@@ -1,111 +1,151 @@
 
-
 .services-section {
     text-align: center;
-    padding: 50px 0;
     background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
+}
 
+.section-heading{
+    padding: 3.125rem 5rem; 
 }
 
 .services-section h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 56px;
+    font-size: 3.5rem; 
     font-weight: 800;
-    line-height: 61.6px;
+    line-height: 3.85rem;
     text-align: center;
     color: #2F5E8F;
-    margin-bottom: 20px;
 }
 
 .services-section p {
     font-family: 'Inter', sans-serif;
-    font-size: 28px;
+    font-size: 1.75rem; 
     font-weight: 500;
-    line-height: 57px;
+    line-height: 3.56rem;
     text-align: center;
     color: #030701;
-
+    margin:0 0 1rem 0;
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 70px;
+    padding: 3.125rem 5rem; 
 }
 
 .service {
-    max-width: 350px;
-    margin: 25px;
+    width: 350px;
+    margin: 1.5625rem;
     text-align: center;
 }
 
 .service img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem;
+    height: 6.25rem; 
 }
 
 .service h3 {
-    margin: 20px 0;
+    margin: 1.25rem 0; 
     font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-size: 2rem; 
     font-weight: 700;
-    line-height: 35.2px;
+    line-height: 2.2rem; 
     text-align: center;
     color: #0F172A;
 }
 
 .service p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem; 
     font-weight: 400;
-    line-height: 32px;
+    line-height: 2rem;
     text-align: center;
     color: #0F172A;
 }
 
-/* Mission Section */
+
 .mission-section {
     background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
-    padding: 50px 0;
     text-align: center;
 }
 
 .mission-section h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 56px;
+    font-size: 3.5rem;
     font-weight: 800;
-    line-height: 61.6px;
+    line-height: 3.85rem;
     text-align: center;
     color: #2F5E8F;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .mission-statements {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 60px;
+    padding: 3.125rem 5rem;
 }
 
 .mission {
-    width: 30%;
-    max-width: 350px;
-    margin: 20px;
+    width: 350px; 
+    margin: 1.25rem; 
     text-align: center;
 }
 
 .mission img {
-    width: 100px;
-    height: 100px;
+    width: 6.25rem; 
+    height: 6.25rem;
 }
 
 .mission p {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 2rem; 
     text-align: center;
     color: #0F172A;
-
 }
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 14px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .services-section h2{
+        color:#0F172A;
+        font-weight: 700;
+    }
+
+    .services-section p{
+        font-family: 'Roboto', sans-serif;
+        line-height: 2.7rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+
+    .services{
+        padding: 5%;
+        background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    .mission-statements{
+        padding: 6%;
+        background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
+    }
+    .section-heading{
+        background-color: #EAF2FB;
+        padding: 5%;
+    }
+
+    .service p{
+        line-height:2.1rem ;
+    }
+}
+
