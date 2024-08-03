@@ -2,11 +2,10 @@
 
 .header {
     background-color: #2F5E8F;
-    padding: 1.5rem; /* 24px */
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #E2E8F0;
 }
 
 .header-container {
@@ -17,9 +16,9 @@
 
 .header-logo a {
     font-family: 'Roboto', sans-serif;
-    font-size: 2.5rem; /* 40px */
+    font-size: 2.5rem;
     font-weight: 700;
-    line-height: 2.75rem; /* 44px */
+    line-height: 2.75rem; 
     text-align: left;
     color: #ffffff;
     text-decoration: none;
@@ -27,7 +26,7 @@
 
 .nav {
     display: flex;
-    gap: 1.375rem; /* 22px */
+    gap: 1.375rem; 
     margin-left: auto;
 }
 
@@ -106,14 +105,15 @@
     .side-nav.open {
         display: flex;
         transform: translateX(0); 
+        padding-top: 50px;
     }
 
     .side-nav a {
         color: #ffffff;
         text-decoration: none;
         font-family: 'Roboto', sans-serif;
-        padding: 0.75rem 0.5rem; 
-        font-size: 1.125rem; 
+        padding: 1.5rem; 
+        font-size: 1.8rem; 
         font-weight: 500;
         line-height: 1.5rem;
         letter-spacing: 0.03125rem;
