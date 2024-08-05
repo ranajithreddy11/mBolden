@@ -15,39 +15,46 @@ import PatsClientLogo2 from '../assets/LandingPageImages/PastClientLogo2.png';
 import PatsClientLogo3 from '../assets/LandingPageImages/PastClientLogo3.png';
 import PastClientLogo4 from '../assets/LandingPageImages/PastClientLogo4.jpg';
 
+// Import components
+import Header from './../components/Header';
+import Footer from './../components/Footer';
+
 const LandingPage = () => {
     return (
         <div className="landing-page">
+            {/* Header */}
+            <Header />
 
             {/* Hero Section */}
             <div className="hero-section">
                 <div className="hero-content">
-                    <h1>Be Bold ,Be Agile
-                        <br/>
-                        Drive Change</h1>
+                    <h1>Be Bold, Be Agile <br /> Drive Change</h1>
                     <p>Empowering teams by focusing on people, strategy, and culture</p>
                     <button className="learn-more-button">Learn More</button>
                     <div className="social-icons">
-                        <a href="#"><img src={LinkedInIcon} alt="LinkedIn"/></a>
-                        <a href="#"><img src={InstaIcon} alt="Instagram"/></a>
-                        <a href="#"><img src={FacebookIcon} alt="Facebook"/></a>
+                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
+                            <img src={LinkedInIcon} alt="LinkedIn" />
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener">
+                            <img src={InstaIcon} alt="Instagram" />
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener">
+                            <img src={FacebookIcon} alt="Facebook" />
+                        </a>
                     </div>
                 </div>
-                <img src={heroImage} alt="Team" className="hero-image"/>
+                <img src={heroImage} alt="Team" className="hero-image" />
             </div>
 
             {/* Capture Section */}
             <div className="capture-section">
-                <img src={captureImage2} alt="Capture" className="capture-image"/>
+                <img src={captureImage2} alt="Capture" className="capture-image" />
                 <div className="capture-content">
                     <h2>Capture</h2>
                     <p>
-                        Try our Internal Communications Diagnostic Survey Tool - “Capture.” This
-                        intuitive survey is designed to empower organizations like yours evaluate the
-                        effectiveness of internal communication strategies.
+                        Try our Internal Communications Diagnostic Survey Tool - “Capture.” This intuitive survey is designed to empower organizations like yours to evaluate the effectiveness of internal communication strategies.
                     </p>
-                    <p>By completing this brief survey, you’ll gain valuable insights into your
-                        strengths and potential areas for improvement.</p>
+                    <p>By completing this brief survey, you’ll gain valuable insights into your strengths and potential areas for improvement.</p>
                     <button className="get-started-button">Learn More</button>
                 </div>
             </div>
@@ -57,25 +64,16 @@ const LandingPage = () => {
                 <h2>Satisfied Customers</h2>
                 <div className="testimonials">
                     <div className="testimonial">
-                        <img src={logo1} alt="Logo1" className="testimonial-logo"/>
-                        <p>"The advice and project support from mBolden was instrumental in helping us
-                            build a more effective team. Their insight into our strategy and execution
-                            elevated our engagement and impact greatly. We would recommend mBolden for any
-                            consulting projects."</p>
+                        <img src={logo1} alt="Logo1" className="testimonial-logo" />
+                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
                     </div>
                     <div className="testimonial">
-                        <img src={logo2} alt="Logo2" className="testimonial-logo"/>
-                        <p>"The advice and project support from mBolden was instrumental in helping us
-                            build a more effective team. Their insight into our strategy and execution
-                            elevated our engagement and impact greatly. We would recommend mBolden for any
-                            consulting projects."</p>
+                        <img src={logo2} alt="Logo2" className="testimonial-logo" />
+                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
                     </div>
                     <div className="testimonial">
-                        <img src={logo3} alt="Logo3" className="testimonial-logo"/>
-                        <p>"The advice and project support from mBolden was instrumental in helping us
-                            build a more effective team. Their insight into our strategy and execution
-                            elevated our engagement and impact greatly. We would recommend mBolden for any
-                            consulting projects."</p>
+                        <img src={logo3} alt="Logo3" className="testimonial-logo" />
+                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
                     </div>
                 </div>
             </div>
@@ -83,17 +81,16 @@ const LandingPage = () => {
             {/* End Section */}
             <div className="end-section">
                 <div className="end-section-content">
-                    <p>Join Companies who have
-                        <br/>made
-                        <span className="bold-text">BOLD</span>
-                        moves with us.</p>
+                    <p>Join Companies who have <br />made <span className="bold-text">BOLD</span> moves with us.</p>
                 </div>
             </div>
-            <img src={PatsClientLogo1} alt="Team" className="past-client-logo-image"/>
-            <img src={PatsClientLogo2} alt="Team" className="past-client-logo-image"/>
-            <img src={PatsClientLogo3} alt="Team" className="past-client-logo-image"/>
-            <img src={PastClientLogo4} alt="Team" className="past-client-logo4-image"/>
+            <img src={PatsClientLogo1} alt="Team" className="past-client-logo-image" />
+            <img src={PatsClientLogo2} alt="Team" className="past-client-logo-image" />
+            <img src={PatsClientLogo3} alt="Team" className="past-client-logo-image" />
+            <img src={PastClientLogo4} alt="Team" className="past-client-logo4-image" />
 
+            {/* Footer */}
+            <Footer />
         </div>
     );
 };
