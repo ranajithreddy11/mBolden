@@ -15,15 +15,9 @@ import PatsClientLogo2 from '../assets/LandingPageImages/PastClientLogo2.png';
 import PatsClientLogo3 from '../assets/LandingPageImages/PastClientLogo3.png';
 import PastClientLogo4 from '../assets/LandingPageImages/PastClientLogo4.jpg';
 
-// Import components
-import Header from './../components/Header';
-import Footer from './../components/Footer';
-
 const LandingPage = () => {
     return (
         <div className="landing-page">
-            {/* Header */}
-            <Header />
 
             {/* Hero Section */}
             <div className="hero-section">
@@ -88,9 +82,6 @@ const LandingPage = () => {
             <img src={PatsClientLogo2} alt="Team" className="past-client-logo-image" />
             <img src={PatsClientLogo3} alt="Team" className="past-client-logo-image" />
             <img src={PastClientLogo4} alt="Team" className="past-client-logo4-image" />
-
-            {/* Footer */}
-            <Footer />
         </div>
     );
 };
