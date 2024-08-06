@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import '../assets/styles/Footer.css';
 import facebook from '../assets/images/Facebook.svg';
 import linkedin from '../assets/images/LinkedIn.svg';
@@ -14,9 +14,10 @@ const Footer = () => {
                 </div>
                 <div className="footer-nav-container">
                     <div className="footer-copyright">
-                         <div>
+                        <div>
                             <span class="logo">mBolden</span>
-                            <span class="copyright"> @ 2023. All rights reserved.</span>
+                            <span class="copyright">
+                                @ 2023. All rights reserved.</span>
                         </div>
                     </div>
                     <nav className="footer-nav">
@@ -30,9 +31,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-social">
                     <div className="social">
-                        <a href="#facebook"><img src={facebook} alt="Facebook" /></a>
-                        <a href="#linkedin"><img src={linkedin} alt="LinkedIn" /></a>
-                        <a href="#instagram"><img src={instagram} alt="Instagram" /></a>
+                        <a href="#facebook"><img src={facebook} alt="Facebook"/></a>
+                        <a href="#linkedin"><img src={linkedin} alt="LinkedIn"/></a>
+                        <a href="#instagram"><img src={instagram} alt="Instagram"/></a>
                     </div>
                 </div>
             </div>

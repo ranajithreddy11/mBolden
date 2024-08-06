@@ -4,13 +4,13 @@
     background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
 }
 
-.section-heading{
-    padding: 3.125rem 5rem; 
+.section-heading {
+    padding: 3.125rem 5rem;
 }
 
 .services-section h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 3.5rem; 
+    font-size: 3.5rem;
     font-weight: 800;
     line-height: 3.85rem;
     text-align: center;
@@ -19,19 +19,19 @@
 
 .services-section p {
     font-family: 'Inter', sans-serif;
-    font-size: 1.75rem; 
+    font-size: 1.75rem;
     font-weight: 500;
     line-height: 3.56rem;
     text-align: center;
     color: #030701;
-    margin:0 0 1rem 0;
+    margin: 0 0 1rem;
 }
 
 .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 3.125rem 5rem; 
+    padding: 3.125rem 5rem;
 }
 
 .service {
@@ -42,28 +42,27 @@
 
 .service img {
     width: 6.25rem;
-    height: 6.25rem; 
+    height: 6.25rem;
 }
 
 .service h3 {
-    margin: 1.25rem 0; 
+    margin: 1.25rem 0;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: 700;
-    line-height: 2.2rem; 
+    line-height: 2.2rem;
     text-align: center;
     color: #0F172A;
 }
 
 .service p {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem; 
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 2rem;
     text-align: center;
     color: #0F172A;
 }
-
 
 .mission-section {
     background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
@@ -88,13 +87,13 @@
 }
 
 .mission {
-    width: 350px; 
-    margin: 1.25rem; 
+    width: 350px;
+    margin: 1.25rem;
     text-align: center;
 }
 
 .mission img {
-    width: 6.25rem; 
+    width: 6.25rem;
     height: 6.25rem;
 }
 
@@ -102,50 +101,46 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
-    line-height: 2rem; 
+    line-height: 2rem;
     text-align: center;
     color: #0F172A;
 }
-
 @media (max-width: 768px) {
     :root {
-        font-size: 14px; 
+        font-size: 14px;
     }
 }
-
-
 @media (max-width: 480px) {
     :root {
         font-size: 12px;
     }
 
-    .services-section h2{
-        color:#0F172A;
+    .services-section h2 {
+        color: #0F172A;
         font-weight: 700;
     }
 
-    .services-section p{
+    .services-section p {
         font-family: 'Roboto', sans-serif;
         line-height: 2.7rem;
         font-weight: 400;
         margin-bottom: 2rem;
     }
 
-    .services{
+    .services {
         padding: 5%;
         background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
     }
-    .mission-statements{
+    .mission-statements {
         padding: 6%;
         background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
     }
-    .section-heading{
+    .section-heading {
         background-color: #EAF2FB;
         padding: 5%;
     }
 
-    .service p{
-        line-height:2.1rem ;
+    .service p {
+        line-height: 2.1rem;
     }
 }
-

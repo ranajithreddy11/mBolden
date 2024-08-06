@@ -9,31 +9,35 @@
 
 .footer-logo a {
     font-family: 'Anton', sans-serif;
-    font-size: 5rem; 
+    font-size: 5rem;
     font-weight: 400;
-    line-height: 7.527rem; 
+    line-height: 7.527rem;
     text-decoration: none;
     color: #FDFFFC;
 }
 
 .footer-nav-container {
     display: flex;
-    padding: 2% 0px;
+    padding: 2% 0;
 }
 
 .footer-copyright .logo {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.75rem; /* 28px */
+    font-size: 1.75rem;
+    /* 28px */
     font-weight: 500;
-    line-height: 1.925rem; /* 30.8px */
+    line-height: 1.925rem;
+    /* 30.8px */
     color: #ffffff;
 }
 
 .footer-copyright .copyright {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 400;
-    line-height: 1.75rem; /* 28px */
+    line-height: 1.75rem;
+    /* 28px */
     color: #ffffff;
 }
 
@@ -47,11 +51,12 @@
     color: #ffffff;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25rem; /* 20px */
+    font-size: 1.25rem;
+    /* 20px */
     font-weight: 400;
-    line-height: 1.75rem; /* 28px */
+    line-height: 1.75rem;
+    /* 28px */
 }
-
 .footer-nav a:hover {
     color: #F9530F;
 }
@@ -70,23 +75,21 @@
     width: 48px;
     height: 48px;
 }
-
 @media (max-width: 768px) {
-    
+
     .footer-logo {
         display: none;
     }
 
-    .footer-copyright .logo, .footer-copyright .copyright {
+    .footer-copyright .copyright,
+    .footer-copyright .logo {
         display: block;
         padding: 10px 0;
     }
 
-
-
     .footer-nav-container {
         display: block;
-        padding: 0px;
+        padding: 0;
     }
 
     .footer-social {
@@ -95,9 +98,8 @@
 
     .footer-nav {
         padding: 10px 0;
-        gap:0px;
+        gap: 0;
         justify-content: space-between;
     }
-    
-    
+
 }
