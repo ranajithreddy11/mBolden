@@ -1,0 +1,52 @@
+.survey-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .internalcommunication {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+  
+  .options {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .options div {
+    margin: 10px 0;
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .next {
+    padding: 12px 24px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .next:hover {
+    background-color: #1565c0;
+  }
+  
+

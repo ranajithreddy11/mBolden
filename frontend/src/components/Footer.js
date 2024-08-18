@@ -15,9 +15,9 @@ const Footer = () => {
                 <div className="footer-nav-container">
                     <div className="footer-copyright">
                         <div>
-                            <span class="logo">mBolden</span>
+                            <span class="logo">mBolden. </span>
                             <span class="copyright">
-                                @ 2023. All rights reserved.</span>
+                                All rights reserved.</span>
                         </div>
                     </div>
                     <nav className="footer-nav">

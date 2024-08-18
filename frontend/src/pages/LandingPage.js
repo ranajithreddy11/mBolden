@@ -4,9 +4,9 @@ import '../assets/styles/LandingPage.css';
 // Import images
 import heroImage from '../assets/LandingPageImages/hero-image.png';
 import captureImage2 from '../assets/LandingPageImages/capture-image2.png';
-import FacebookIcon from '../assets/LandingPageImages/facebook-icon.png';
-import InstaIcon from '../assets/LandingPageImages/instagram-icon.png';
-import LinkedInIcon from '../assets/LandingPageImages/linkedin-icon.png';
+import FacebookIcon from '../assets/images/Facebook.svg';
+import InstaIcon from '../assets/images/Instagram.svg';
+import LinkedInIcon from '../assets/images/LinkedIn.svg';
 import logo1 from '../assets/LandingPageImages/Logo1.png';
 import logo2 from '../assets/LandingPageImages/Logo2.png';
 import logo3 from '../assets/LandingPageImages/Logo3.png';
@@ -22,7 +22,8 @@ const LandingPage = () => {
             {/* Hero Section */}
             <div className="hero-section">
                 <div className="hero-content">
-                    <h1>Be Bold, Be Agile <br /> Drive Change</h1>
+                    <h1>Be Bold, Be Agile</h1>
+                    <h2>Drive Change</h2>
                     <p>Empowering teams by focusing on people, strategy, and culture</p>
                     <button className="learn-more-button">Learn More</button>
                     <div className="social-icons">
@@ -37,7 +38,9 @@ const LandingPage = () => {
                         </a>
                     </div>
                 </div>
-                <img src={heroImage} alt="Team" className="hero-image" />
+                <div className="hero-image">
+                <img src={heroImage} alt="Team" className="image-hero" />
+                </div>
             </div>
 
             {/* Capture Section */}
@@ -51,6 +54,7 @@ const LandingPage = () => {
                     <p>By completing this brief survey, you’ll gain valuable insights into your strengths and potential areas for improvement.</p>
                     <button className="get-started-button">Learn More</button>
                 </div>
+                <img src={captureImage2} alt="Capture" className="capture-image2" />
             </div>
 
             {/* Testimonials Section */}
@@ -78,10 +82,12 @@ const LandingPage = () => {
                     <p>Join Companies who have <br />made <span className="bold-text">BOLD</span> moves with us.</p>
                 </div>
             </div>
-            <img src={PatsClientLogo1} alt="Team" className="past-client-logo-image" />
-            <img src={PatsClientLogo2} alt="Team" className="past-client-logo-image" />
-            <img src={PatsClientLogo3} alt="Team" className="past-client-logo-image" />
-            <img src={PastClientLogo4} alt="Team" className="past-client-logo4-image" />
+                <div className='past-client-container'>
+                <img src={PatsClientLogo1} alt="Team" className="past-client-logo-image" />
+                <img src={PatsClientLogo2} alt="Team" className="past-client-logo-image" />
+                <img src={PatsClientLogo3} alt="Team" className="past-client-logo-image" />
+                <img src={PastClientLogo4} alt="Team" className="past-client-logo-image" />
+            </div>
         </div>
     );
 };

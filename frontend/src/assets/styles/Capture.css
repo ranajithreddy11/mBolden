@@ -1,0 +1,123 @@
+.capture-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 4rem auto; /* Center the container horizontally */
+  position: relative; /* Add relative positioning for absolute positioned children */
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  left: -5%; /* Adjust to start 5% left to create overlap */
+  max-width: 85%;
+}
+
+.image-box {
+  flex: 0 0 50%; /* Fix the width to 50% of the container */
+  z-index: 1; /* Ensure it sits below the text-box */
+  opacity: 1; /* Slight opacity for overlapping effect */
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.25rem 0 0 0.25rem;
+  box-shadow: 0px 0.25rem 0.625rem 0px #00000080;
+}
+
+.text-box {
+  flex: 0 0 55%; /* Fix the width to 55% of the container */
+  background: #2F5E8FCC;
+  color: #fff;
+  padding: 3rem;
+  border-radius: 0 0.25rem 0.25rem 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2; /* Ensure it sits above the image-box */
+  position: relative;
+  right: 5%; /* Pull 5% to the right to create the overlap */
+}
+
+.text-box h1 {
+  font-family: 'Roboto',sans-serif;
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 2.3rem;
+  letter-spacing: 3px;
+  text-align: left;
+  margin: 0;
+
+}
+
+.text-box p {
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-size:1.3rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  text-align: left;
+
+}
+
+.capture {
+  padding: 0.75rem 0;
+  color: white;
+  cursor: pointer;
+  align-self: flex-start;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+}
+
+.capture-button:hover {
+  background-color: #1565c0;
+}
+
+@media (max-width: 786px) {
+
+  :root {
+      font-size: 12px;
+  }
+
+  .content-wrapper{
+    display: flex;
+    max-width: 85%;
+    flex-direction: column;
+  }
+
+  .text-box{
+    right: 0;
+    max-width: 90%;
+    top:-40px;
+    background-color:#2F5E8F;
+  }
+}
+
+@media (max-width: 480PX) {
+
+  :root {
+      font-size: 12px;
+  }
+
+  .text-box{
+    padding: 2.6rem;
+  }
+
+  .text-box h1{
+    font-size: 2rem;
+  }
+
+  .text-box p{
+    line-height: 2rem;
+  }
+}

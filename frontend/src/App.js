@@ -10,6 +10,10 @@ import Insights from './pages/Insights';
 import CraftingMessage from './pages/CraftingMessage';
 import CustomerTransforming from './pages/CustomerTransforming';
 import GigEconomy from './pages/GigEconomy';
+import Capture from './pages/Capture';
+import StartCapture from './pages/StartCapture';
+import SurveyPage from './pages/SurveyPage';
+import ResultsPage from './pages/ResultsPage';
 
 const App = () => {
     return (
@@ -25,7 +29,11 @@ const App = () => {
                     path="/insights/customer-transforming"
                     element={< CustomerTransforming />}/>
                 <Route path="/insights/gig-economy" element={< GigEconomy />}/>
+                <Route path='/capture' element={<Capture/>}/>
+                <Route path="/startcapture" element={<StartCapture/>}/>
                 <Route path="/contact" element={< Contact />}/>
+                <Route path="/survey" element={<SurveyPage />} />
+                <Route path="/results" element={<ResultsPage />} />
             </Routes>
             <Footer/>
         </Router>
