@@ -67,6 +67,7 @@
     line-height: 26px;
     text-align: left;
     color: #011334;
+   text-decoration: none; 
 }
 
 .contact-email {

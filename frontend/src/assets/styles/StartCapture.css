@@ -1,0 +1,77 @@
+.startcapture-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 9rem auto;
+}
+
+.internal-communication {
+  color: #2F5E8F;
+  font-family: 'Inter', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 5rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.internal-description {
+  color: #263238;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.next-button {
+  padding: 0.75rem 6.25rem;
+  background: #2F5E8F;
+  color: #fdfffc;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  line-height: 2.0625rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 12px;
+}
+
+.internal-description, .internal-communication{
+  margin:4rem 0;
+}
+.internal-communication{
+  font-size: 4rem;
+}
+
+.startcapture-container{
+  width: 85%;
+}
+}
+
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 10px;
+}
+
+.internal-description, .internal-communication{
+  margin:4rem 0;
+}
+.internal-communication{
+  font-size: 3rem;
+}
+
+.startcapture-container{
+  width: 80%;
+  margin: 6rem auto;
+}
+}
