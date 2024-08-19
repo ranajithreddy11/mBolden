@@ -13,7 +13,8 @@ import GigEconomy from './pages/GigEconomy';
 import Capture from './pages/Capture';
 import StartCapture from './pages/StartCapture';
 import SurveyPage from './pages/SurveyPage';
-import ResultsPage from './pages/ResultsPage';
+import SurveyEnd from './pages/SurveyEnd';
+import Results from './pages/Results';
 
 const App = () => {
     return (
@@ -33,7 +34,8 @@ const App = () => {
                 <Route path="/startcapture" element={<StartCapture/>}/>
                 <Route path="/contact" element={< Contact />}/>
                 <Route path="/survey" element={<SurveyPage />} />
-                <Route path="/results" element={<ResultsPage />} />
+                <Route path="/surveyend" element={<SurveyEnd/>} />
+                <Route path="/results" element={<Results/>} />
             </Routes>
             <Footer/>
         </Router>
