@@ -313,6 +313,10 @@
         max-width: 90%;
     }
 
+    .testimonials-section{
+        background: linear-gradient(180deg, #F1F5F9 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
     .capture-content h2,
     .testimonials-section h2{
         text-align: center;

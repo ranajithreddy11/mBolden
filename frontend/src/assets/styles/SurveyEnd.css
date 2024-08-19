@@ -1,0 +1,192 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.end-main-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FDFFFC;
+}
+
+.end-capture-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.end-content-wrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.end-image-box {
+    flex: 0 0 50%;
+    z-index: 1;
+    position: relative;
+    height: auto; /* Ensure height is based on content */
+    box-sizing: border-box; /* Include padding and borders in height */
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any default padding */
+}
+
+.end-image {
+    display: block;
+    width: 90%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px 0 0 4px;
+    margin: 0; /* Reset any default margin */
+    padding: 0; /* Reset any default padding */
+    box-sizing: border-box; /* Ensure padding and borders are included */
+    object-fit: cover; /* Adjust if necessary to fit the container */
+}
+
+.end-image-mobile{
+    display: none;
+}
+
+.end-text-box {
+    flex: 0 0 50%;
+    color: #000;
+    padding: 1.5rem;
+    border-radius: 0 4px 4px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    padding-right: 5rem;
+}
+
+.end-text-box h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    text-align: left;
+    color: #263238;
+}
+
+.end-text-box p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #263238;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.8rem;
+    text-align: left;
+    color: #263238;
+    margin: 1rem 0;
+}
+
+input[type="email"] {
+    padding: 0.75rem;
+    border: 1px solid #C7CCCB;
+    border-radius: 6px;
+    background: #FDFFFC;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    text-align: left;
+    color: #263238;
+}
+
+.end-capture {
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-align: center;
+    margin: 2.2rem 0;
+    width: 50%;
+    padding: 0.5rem;
+
+    border: 2px solid #2F5E8F;
+    background-color: #fff;
+    color: #2F5E8F;
+}
+
+.end-capture:hover{
+    background-color: #2F5E8F;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .end-content-wrapper{
+        display: block;
+    }
+
+    .end-text-box h1{
+        color: #2F5E8F;
+        text-align: center;
+    }
+
+    .end-image{
+        display: none;
+    }
+
+    .end-image-mobile{
+        margin: 5% auto;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px 0 0 4px;
+        padding: 0; /* Reset any default padding */
+        box-sizing: border-box; /* Ensure padding and borders are included */
+        object-fit: cover; 
+    }
+
+    .end-text-box{
+        padding: 0;
+        margin: 8% 10%;
+    }
+    .end-capture{
+        margin:2rem  auto;
+        padding: 1rem;
+    }
+
+    input[type="email"] {
+        padding: 1rem 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .end-text-box h1{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+}

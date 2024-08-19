@@ -116,7 +116,7 @@ const SurveyPage = () => {
       setCurrentSection(currentSection + 1);
       setCurrentQuestion(0);
     } else {
-      navigate('/results');  // Redirect to results page
+      navigate('/surveyend');  // Redirect to results page
     }
   };
 
