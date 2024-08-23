@@ -1,15 +1,15 @@
 import React from 'react';
 import '../assets/styles/GigEconomy.css'
-import GigEconomyImage from '../assets/GigEconomyImages/GigEconomyImage.png'
-import ProjectedGross from '../assets/GigEconomyImages/ProjectedGrossChart.png'
-import FastestGrowing from '../assets/GigEconomyImages/FastestGrowing.png'
-import TopSkills from '../assets/GigEconomyImages/topSkills.png'
+import GigEconomyImage from '../assets/images/Insights/GigEconomyImage.png'
+import ProjectedGross from '../assets/images/Insights/ProjectedGrossChart.png'
+import FastestGrowing from '../assets/images/Insights/FastestGrowing.png'
+import TopSkills from '../assets/images/Insights/topSkills.png'
 
 const GigEconomy = () => {
     return (
         <div className="gig-economy-page">
             <main>
-                <div className="content-wrapper">
+                <div className="crafting-content-wrapper">
                     <div className="head-section">
                         <img src={GigEconomyImage} alt="gig-economy" className="head-image"/>
                         <h1>The Gig Economy and Disruptive Technologies Changing the Composition of

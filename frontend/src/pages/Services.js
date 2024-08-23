@@ -1,12 +1,12 @@
 import React from 'react';
 import './../assets/styles/Services.css';
-import Planning from '../assets/images/Planning.svg';
-import Training from '../assets/images/Training.svg';
-import Leadership from '../assets/images/Leadership.svg';
-import Diversity from '../assets/images/Diversity.svg';
-import Team from '../assets/images/Team.svg';
-import Heart from '../assets/images/Heart.svg';
-import Plant from '../assets/images/Plant.svg';
+import Planning from '../assets/images/Services/Planning.svg';
+import Training from '../assets/images/Services/Training.svg';
+import Leadership from '../assets/images/Services/Leadership.svg';
+import Diversity from '../assets/images/Services/Diversity.svg';
+import Team from '../assets/images/Services/Team.svg';
+import Heart from '../assets/images/Services/Heart.svg';
+import Plant from '../assets/images/Services/Plant.svg';
 
 const Services = () => {
     return (

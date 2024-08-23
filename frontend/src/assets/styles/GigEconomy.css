@@ -9,7 +9,7 @@ main {
     background-color: #f7f7f2;
 }
 
-.content-wrapper {
+.crafting-content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
@@ -139,7 +139,7 @@ main {
 }
 
 @media (max-width: 768px) {
-    .content-wrapper {
+    .crafting-content-wrapper {
         padding: 15px;
     }
 
@@ -184,7 +184,7 @@ main {
 }
 
 @media (max-width: 480px) {
-    .content-wrapper {
+    .crafting-content-wrapper {
         padding: 10px;
     }
 

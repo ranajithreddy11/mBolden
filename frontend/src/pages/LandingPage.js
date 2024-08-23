@@ -1,19 +1,20 @@
 import React from 'react';
 import '../assets/styles/LandingPage.css';
+import { Link } from 'react-router-dom';
 
 // Import images
-import heroImage from '../assets/LandingPageImages/hero-image.png';
-import captureImage2 from '../assets/LandingPageImages/capture-image2.png';
+import heroImage from '../assets/images/LandingPage/hero-image.png';
+import captureImage2 from '../assets/images/LandingPage/capture-image2.png';
 import FacebookIcon from '../assets/images/Facebook.svg';
 import InstaIcon from '../assets/images/Instagram.svg';
 import LinkedInIcon from '../assets/images/LinkedIn.svg';
-import logo1 from '../assets/LandingPageImages/Logo1.png';
-import logo2 from '../assets/LandingPageImages/Logo2.png';
-import logo3 from '../assets/LandingPageImages/Logo3.png';
-import PatsClientLogo1 from '../assets/LandingPageImages/PastClientLogo1.png';
-import PatsClientLogo2 from '../assets/LandingPageImages/PastClientLogo2.png';
-import PatsClientLogo3 from '../assets/LandingPageImages/PastClientLogo3.png';
-import PastClientLogo4 from '../assets/LandingPageImages/PastClientLogo4.jpg';
+import logo1 from '../assets/images/LandingPage/Logo1.png';
+import logo2 from '../assets/images/LandingPage/Logo2.png';
+import logo3 from '../assets/images/LandingPage/Logo3.png';
+import PatsClientLogo1 from '../assets/images/LandingPage/PastClientLogo1.png';
+import PatsClientLogo2 from '../assets/images/LandingPage/PastClientLogo2.png';
+import PatsClientLogo3 from '../assets/images/LandingPage/PastClientLogo3.png';
+import PastClientLogo4 from '../assets/images/LandingPage/PastClientLogo4.png';
 
 const LandingPage = () => {
     return (
@@ -25,7 +26,9 @@ const LandingPage = () => {
                     <h1>Be Bold, Be Agile</h1>
                     <h2>Drive Change</h2>
                     <p>Empowering teams by focusing on people, strategy, and culture</p>
-                    <button className="learn-more-button">Learn More</button>
+                    <Link to="/about">
+                        <button href="/about" className="learn-more-button">Learn More</button>
+                    </Link>
                     <div className="social-icons">
                         <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
                             <img src={LinkedInIcon} alt="LinkedIn" />
@@ -52,7 +55,9 @@ const LandingPage = () => {
                         Try our Internal Communications Diagnostic Survey Tool - “Capture.” This intuitive survey is designed to empower organizations like yours to evaluate the effectiveness of internal communication strategies.
                     </p>
                     <p>By completing this brief survey, you’ll gain valuable insights into your strengths and potential areas for improvement.</p>
-                    <button className="get-started-button">Learn More</button>
+                    <Link to="/capture">
+                        <button className="get-started-button">Learn More</button>
+                    </Link>
                 </div>
                 <img src={captureImage2} alt="Capture" className="capture-image2" />
             </div>

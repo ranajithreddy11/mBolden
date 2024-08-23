@@ -1,0 +1,99 @@
+{
+    "sections": [
+      {
+        "title": "Section 1: Communication Strategy",
+        "questions": [
+          {
+            "question": "Do you have a clearly defined internal communications strategy?",
+            "type": "single",
+            "options": [
+              { "text": "Yes", "points": 2 },
+              { "text": "Somewhat", "points": 1 },
+              { "text": "No", "points": 0 }
+            ]
+          },
+          {
+            "question": "How frequently is the internal communications strategy reviewed?",
+            "type": "single",
+            "options": [
+              { "text": "Annually", "points": 2 },
+              { "text": "Every 2-3 years", "points": 1 },
+              { "text": "Rarely/Never", "points": 0 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Section 2: Tools and Channels",
+        "questions": [
+          {
+            "question": "What types of communication tools and channels are currently used in your organization?",
+            "type": "multiple",
+            "options": [
+              { "text": "Intranet", "points": 2 },
+              { "text": "EMAIL", "points": 2 },
+              { "text": "Internal Social Network", "points": 1 },
+              { "text": "Instant messaging app", "points": 1 },
+              { "text": "None", "points": 0 }
+            ]
+          },
+          {
+            "question": "How effective are these tools and channels in reaching all employees?",
+            "type": "single",
+            "options": [
+              { "text": "Very effective", "points": 2 },
+              { "text": "Moderately effective", "points": 1 },
+              { "text": "Not effective", "points": 0 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Section 3: Employee Engagement",
+        "questions": [
+          {
+            "question": "How often do employees receive communications from senior leadership?",
+            "type": "single",
+            "options": [
+              { "text": "Weekly", "points": 2 },
+              { "text": "Monthly", "points": 1 },
+              { "text": "Rarely/Never", "points": 0 }
+            ]
+          },
+          {
+            "question": "Is there a mechanism for employees to provide feedback on internal communications?",
+            "type": "single",
+            "options": [
+              { "text": "Yes, regularly used", "points": 2 },
+              { "text": "Yes, rarely used", "points": 1 },
+              { "text": "No", "points": 0 }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Section 4: Content Relevance and Clarity",
+        "questions": [
+          {
+            "question": "How relevant do employees find the content of internal communications?",
+            "type": "single",
+            "options": [
+              { "text": "Very relevant", "points": 2 },
+              { "text": "Somewhat relevant", "points": 1 },
+              { "text": "Not relevant", "points": 0 }
+            ]
+          },
+          {
+            "question": "How clear and understandable is the content of internal communications?",
+            "type": "single",
+            "options": [
+              { "text": "Very clear", "points": 2 },
+              { "text": "Somewhat clear", "points": 1 },
+              { "text": "Not clear", "points": 0 }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

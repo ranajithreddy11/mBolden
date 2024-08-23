@@ -1,0 +1,147 @@
+.insights {
+    background-color: #EAF2FB;
+    text-align: center;
+    padding: 6rem 0 4rem 0;
+}
+
+.insights h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4rem;
+    text-align: center;
+    color: #0F172A;
+    margin: 0;
+}
+
+.insights-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 4rem 0;
+    position: relative;
+    /* Add relative positioning for absolute positioned children */
+}
+
+.insights-content-wrapper {
+    display: flex;
+    align-items: center;
+    left: -5%;
+    /* Adjust to start 5% left to create overlap */
+    max-width: 85%;
+}
+
+.insights-image-box {
+    flex: 0 0 50%;
+    /* Fix the width to 50% of the container */
+    z-index: 1;
+    /* Ensure it sits below the text-box */
+    opacity: 1;
+    /* Slight opacity for overlapping effect */
+    position: relative;
+}
+
+.insights-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0.25rem 0.625rem 0 #00000080;
+}
+
+.insights-text-box {
+    flex: 0 0 55%;
+    /* Fix the width to 55% of the container */
+    background: #2F5E8F;
+    color: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    /* Ensure it sits above the image-box */
+    position: relative;
+    right: 5%;
+    /* Pull 5% to the right to create the overlap */
+    border: 1px solid #E2E8F0;
+}
+
+.insights-text-box h1 {
+    font-family: 'Roboto',sans-serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    line-height: 2.3rem;
+    letter-spacing: 3px;
+    text-align: left;
+    margin: 0;
+
+}
+
+.insights-text-box p {
+    margin-bottom: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+    text-align: left;
+
+}
+
+.insights-link {
+    padding: 0.75rem 0;
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+@media (max-width: 786px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .insights-container {
+        background-color: #EAF2FB;
+    }
+
+    .insights-content-wrapper {
+        display: flex;
+        max-width: 85%;
+        flex-direction: column;
+    }
+
+    .insights-text-box {
+        right: 0;
+        max-width: 90%;
+        top: -40px;
+        background-color: #2F5E8F;
+        border: 0;
+    }
+}
+@media (max-width: 480PX) {
+    :root {
+        font-size: 12px;
+    }
+
+    .insights{
+        padding: 4rem 0 0 0;
+    }
+
+    .insights-text-box {
+        padding: 2.6rem;
+    }
+
+    .insights-text-box h1 {
+        font-size: 2rem;
+    }
+
+    .insights-text-box p {
+        line-height: 2rem;
+    }
+}

@@ -1,13 +1,13 @@
 import React from 'react';
 import '../assets/styles/CraftingMessage.css';
-import CraftingMessageImage from '../assets/CraftingMessageImages/CraftingMessageImage.png'
-import ToDoImage from '../assets/CraftingMessageImages/To-Do.png'
+import CraftingMessageImage from '../assets/images/Insights/CraftingMessageImage.png'
+import ToDoImage from '../assets/images/Insights/To-Do.svg'
 
 const CraftingMessages = () => {
     return (
         <div className="crafting-message-page">
             <main>
-                <div className="content-wrapper">
+                <div className="crafting-content-wrapper">
                     <div className="head-section">
                         <img src={CraftingMessageImage} alt="Crafting Messages" className="head-image"/>
                         <h1>Crafting Compelling Messages in Professional Communication</h1>
