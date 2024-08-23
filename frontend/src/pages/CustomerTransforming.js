@@ -1,12 +1,12 @@
 import React from 'react';
 import '../assets/styles/CustomerTransforming.css';
-import CustomerTransformingImage from '../assets/CustomerTransformingImages/CustomerTransformingImage.png'
+import CustomerTransformingImage from '../assets/images/Insights/CustomerTransformingImage.png'
 
 const CustomerTransforming = () => {
     return (
         <div className="customer-transforming-page">
             <main>
-                <div className="content-wrapper">
+                <div className="crafting-content-wrapper">
                     <div className="head-section">
                         <img
                             src={CustomerTransformingImage}

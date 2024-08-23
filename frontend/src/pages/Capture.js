@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/styles/Capture.css';
 import { Link } from 'react-router-dom'; 
-import CaptureTeam from '../assets/images/Capture.jpeg';
+import CaptureTeam from '../assets/images/Capture/Capture.jpeg';
 
 const Capture = () => {
   return (
@@ -24,7 +24,7 @@ const Capture = () => {
             tools and strategies are up to the task, and where there might be room
             for improvement.
           </p>
-          <Link to="/startcapture" className="capture">
+          <Link to="/capture/startcapture" className="capture">
             Start capture →
           </Link>
         </div>

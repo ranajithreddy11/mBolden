@@ -1,52 +1,100 @@
 .survey-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 0 20px;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  .internalcommunication {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  .description {
-    font-size: 1.25rem;
-    margin-bottom: 40px;
-  }
-  
-  .options {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .options div {
-    margin: 10px 0;
-  }
-  
-  .navigation {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .next {
-    padding: 12px 24px;
-    background-color: #1976d2;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .next:hover {
-    background-color: #1565c0;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  padding: 20% 12%;
+  text-align: center;
+  box-sizing: border-box;
+}
 
+.internalcommunication {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 80px;
+  text-align: left;
+  color: #2F5E8F;
+}
+
+.description {
+  font-family: 'Inter', sans-serif;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.36px;
+  text-align: left;
+  color: #263238;
+}
+
+/* Single-column layout for options */
+.options-single-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Two-column layout for options */
+.options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.option {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 10px 16px;
+  gap: 14px;
+  border: 1px solid #2F5E8F;
+  display: flex;
+  align-items: center;
+}
+
+.options label {
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30.26px;
+  text-align: left;
+  color: #263238;
+  margin-left: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #2F5E8F;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.next {
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+  margin: 2.2rem 0;
+  padding: 0.5rem;
+  border: 2px solid #2F5E8F;
+  background-color: #fff;
+  color: #2F5E8F;
+  width: 30%;
+}
+
+.next:hover {
+  background-color: #2F5E8F;
+  color: #fff;
+}

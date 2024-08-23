@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../LandingPageImages/BackgroundHeadImage.png');
+    background-image: url('../images/LandingPage/BackgroundHeadImage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
@@ -200,7 +200,7 @@
 
 /* Footer Section */
 .end-section {
-    background-image: url('../LandingPageImages/EndSectionBackground.png');
+    background-image: url('../images/LandingPage/EndSectionBackground.png');
     background-size: cover;
     background-position: center;
     padding: 2.0625rem 0;
@@ -239,10 +239,40 @@
     object-fit: contain; 
 }
 
+@media (max-width: 1270px) {
+
+    :root {
+        font-size: 14px;
+    }
+
+    .hero-content h1{
+        font-size: 4rem;
+    }
+}
+
 @media (max-width: 1024px) {
 
     :root {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    :root {
+        font-size: 10px;
+    }
+
+    .hero-content h1{
+        font-size: 3.3rem;
+    }
+
+    .hero-content h2{
+        font-size: 3rem;
+    }
+
+    .hero-content p{
+        font-size: 1.5rem;
     }
 }
 

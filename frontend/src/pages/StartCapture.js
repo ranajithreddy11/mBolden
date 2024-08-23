@@ -13,7 +13,7 @@ const StartCapture = () => {
          At the end, tabulate the score and match to results.
         </p>
       </div>
-      <Link to="/survey" className="next-button">
+      <Link to="/capture/survey" className="next-button">
         NEXT
       </Link>
     </div>
