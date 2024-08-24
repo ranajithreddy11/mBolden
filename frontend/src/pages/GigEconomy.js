@@ -1,9 +1,10 @@
 import React from 'react';
-import '../assets/styles/GigEconomy.css'
+import '../assets/styles/InsightsPages.css'
 import GigEconomyImage from '../assets/images/Insights/GigEconomyImage.png'
-import ProjectedGross from '../assets/images/Insights/ProjectedGrossChart.png'
+import ProjectedGross from '../assets/images/Insights/ProjectGross.png'
+import WorkerShare from '../assets/images/Insights/WorkerShare.png'
 import FastestGrowing from '../assets/images/Insights/FastestGrowing.png'
-import TopSkills from '../assets/images/Insights/topSkills.png'
+import TopSkills from '../assets/images/Insights/TopSkills.png'
 
 const GigEconomy = () => {
     return (
@@ -11,9 +12,9 @@ const GigEconomy = () => {
             <main>
                 <div className="crafting-content-wrapper">
                     <div className="head-section">
-                        <img src={GigEconomyImage} alt="gig-economy" className="head-image"/>
                         <h1>The Gig Economy and Disruptive Technologies Changing the Composition of
                             Workforces</h1>
+                        <img src={GigEconomyImage} alt="gig-economy" className="head-image"/>
                     </div>
                     <div className="text-section">
                         <h2>Introduction</h2>
@@ -42,9 +43,10 @@ const GigEconomy = () => {
                         </p>
 
                         <div className="charts">
-                            <div className="chart">
+                            <div className="chart2">
                                 {/* <h3>Projected Gross Volume of the Gig Economy (Billions USD)</h3> */}
                                 <img src={ProjectedGross} alt="Projected Gross Volume"/>
+                                <img src={WorkerShare} alt="Gig Woker Share"/>
                             </div>
                         </div>
 
@@ -187,107 +189,27 @@ const GigEconomy = () => {
                             workers for support and shared learning. 4. Place and Routine: Establish a
                             dedicated workspace and routine for productivity and performance.
                         </p>
-                    </div>
-                    <section className="reference-section">
+                        <section class="reference-section">
                         <h2>References</h2>
-                        <ul>
-                            <li>
-                                <a
-                                    href="https://www.payments.ca/canadas-gig-economy-has-been-fuelled-pandemic-workers-and-businesses-are-challenged-payments"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[1]
-                                    https://www.payments.ca/canadas-gig-economy-has-been-fuelled-pandemic-workers-and-businesses-are-challenged-payments</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.statista.com/statistics/1034564/gig-economy-projected-gross-volume/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[2]
-                                    https://www.statista.com/statistics/1034564/gig-economy-projected-gross-volume/</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.worldbank.org/en/news/press-release/2023/09/07/demand-for-online-gig-work-rapidly-rising-in-developing-countries"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[3]
-                                    https://www.worldbank.org/en/news/press-release/2023/09/07/demand-for-online-gig-work-rapidly-rising-in-developing-countries</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://openknowledge.worldbank.org/entities/publication/ebc4a7e2-85c6-467b-8713-e2d77e954c6c"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[4]
-                                    https://openknowledge.worldbank.org/entities/publication/ebc4a7e2-85c6-467b-8713-e2d77e954c6c</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.hrreporter.com/focus-areas/compensation-and-benefits/number-of-gig-workers-doubles-in-2022/374149"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[5]
-                                    https://www.hrreporter.com/focus-areas/compensation-and-benefits/number-of-gig-workers-doubles-in-2022/374149</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://fastercapital.com/content/Technology-Disruption–Transforming-the-World-Economic-Outlook.html#The-Rise-of-the-Gig-Economy"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[6]
-                                    https://fastercapital.com/content/Technology-Disruption–Transforming-the-World-Economic-Outlook.html#The-Rise-of-the-Gig-Economy</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.weforum.org/press/2020/10/recession-and-automation-changes-our-future-of-work-but-there-are-jobs-coming-report-says-52c5162fce/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[7]
-                                    https://www.weforum.org/press/2020/10/recession-and-automation-changes-our-future-of-work-but-there-are-jobs-coming-report-says-52c5162fce/</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9278314/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[8] https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9278314/</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.statista.com/statistics/921593/gig-economy-number-of-freelancers-us/#:~:text=This%20statistic%20shows%20the%20number,of%20the%20total%20U.S.%20workforce."
-                                    target="_blank"
-                                    rel="noopener noreferrer">[9]
-                                    https://www.statista.com/statistics/921593/gig-economy-number-of-freelancers-us/#:~:text=This%20statistic%20shows%20the%20number,of%20the%20total%20U.S.%20workforce.</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.brainzmagazine.com/post/adapting-to-disruptive-technology-strategies-for-business-strategy-success#:~:text=2.,ongoing%20market%20research%20and%20analysis"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[10]
-                                    https://www.brainzmagazine.com/post/adapting-to-disruptive-technology-strategies-for-business-strategy-success#:~:text=2.,ongoing%20market%20research%20and%20analysis</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.uber.com/en-CA/newsroom/uber-celebrates-10-years-in-canada/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[11] https://www.uber.com/en-CA/newsroom/uber-celebrates-10-years-in-canada/</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://www.statista.com/forecasts/998501/online-food-delivery-bookings-by-brand-in-canada#:~:text=In%202023%2C%20a%20Statista%20survey,using%20the%20food%20delivery%20platform"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[12]
-                                    https://www.statista.com/forecasts/998501/online-food-delivery-bookings-by-brand-in-canada#:~:text=In%202023%2C%20a%20Statista%20survey,using%20the%20food%20delivery%20platform</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://news.airbnb.com/canadayearinreview/"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[13] https://news.airbnb.com/canadayearinreview/</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://investors.upwork.com/static-files/f251fbeb-0851-47e9-b295-65c478999999"
-                                    target="_blank"
-                                    rel="noopener noreferrer">[14]
-                                    https://investors.upwork.com/static-files/f251fbeb-0851-47e9-b295-65c478999999</a>
-                            </li>
-                        </ul>
-                    </section>
+                            <ol>
+                                <li><a href="https://www.payments.ca/canadas-gig-economy-has-been-fuelled-pandemic-workers-and-businesses-are-challenged-payments" target="_blank" rel="noreferrer">https://www.payments.ca/canadas-gig-economy-has-been-fuelled-pandemic-workers-and-businesses-are-challenged-payments</a></li>
+                                <li><a href="https://www.statista.com/statistics/1034564/gig-economy-projected-gross-volume/" target="_blank" rel="noreferrer">https://www.statista.com/statistics/1034564/gig-economy-projected-gross-volume/</a></li>
+                                <li><a href="https://www.worldbank.org/en/news/2020/10/15/future-of-work-rapidly-rising-in-developing-countries" target="_blank" rel="noreferrer">https://www.worldbank.org/en/news/2020/10/15/future-of-work-rapidly-rising-in-developing-countries</a></li>
+                                <li><a href="https://openknowledge.worldbank.org/entities/publication/ebc4a7e2-85c6-467b-8713-e2d77e954c6c" target="_blank" rel="noreferrer">https://openknowledge.worldbank.org/entities/publication/ebc4a7e2-85c6-467b-8713-e2d77e954c6c</a></li>
+                                <li><a href="https://www.hrreporter.com/focus-areas/compensation-and-benefits/number-of-gig-workers-doubles-in-2022/374149" target="_blank" rel="noreferrer">https://www.hrreporter.com/focus-areas/compensation-and-benefits/number-of-gig-workers-doubles-in-2022/374149</a></li>
+                                <li><a href="https://fastercapital.com/content/Technology-Disruption-Transforming-the-World-Economic-Outlook.html#The-Rise-of-the-Gig-Economy" target="_blank" rel="noreferrer">https://fastercapital.com/content/Technology-Disruption-Transforming-the-World-Economic-Outlook.html#The-Rise-of-the-Gig-Economy</a></li>
+                                <li><a href="https://www.weforum.org/press/2020/10/recession-and-automation-changes-our-future-of-work-but-there-are-jobs-coming-report-says-52c5162fce/" target="_blank" rel="noreferrer">https://www.weforum.org/press/2020/10/recession-and-automation-changes-our-future-of-work-but-there-are-jobs-coming-report-says-52c5162fce/</a></li>
+                                <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9278314/" target="_blank" rel="noreferrer">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9278314/</a></li>
+                                <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9278314/" target="_blank" rel="noreferrer">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9278314/</a></li>
+                                <li><a href="https://www.statista.com/statistics/921593/gig-economy-number-of-freelancers-us/#::text=This%20statistic%20shows%20the%20number,of%20the%20total%20U.S.%20workforce." target="_blank" rel="noreferrer">https://www.statista.com/statistics/921593/gig-economy-number-of-freelancers-us/#::text=This%20statistic%20shows%20the%20number,of%20the%20total%20U.S.%20workforce.</a></li>
+                                <li><a href="https://www.brainzmagazine.com/post/adapting-to-disruptive-technology-strategies-for-business-strategy-success#:~:text=2.,ongoing%20market%20research%20and%20analysis" target="_blank" rel="noreferrer">https://www.brainzmagazine.com/post/adapting-to-disruptive-technology-strategies-for-business-strategy-success#:~:text=2.,ongoing%20market%20research%20and%20analysis</a></li>
+                                <li><a href="https://www.uber.com/en-CA/newsroom/uber-celebrates-10-years-in-canada/" target="_blank" rel="noreferrer">https://www.uber.com/en-CA/newsroom/uber-celebrates-10-years-in-canada/</a></li>
+                                <li><a href="https://www.statista.com/forecasts/998501/online-food-delivery-bookings-by-brand-in-canada#:~:text=In%202023,%20a%20Statista%20survey,using%20the%20food%20delivery%20platform." target="_blank" rel="noreferrer">https://www.statista.com/forecasts/998501/online-food-delivery-bookings-by-brand-in-canada#:~:text=In%202023,%20a%20Statista%20survey,using%20the%20food%20delivery%20platform.</a></li>
+                                <li><a href="https://news.airbnb.com/canadayearinreview/" target="_blank" rel="noreferrer">https://news.airbnb.com/canadayearinreview/</a></li>
+                                <li><a href="https://investors.upwork.com/static-files/f251bfeb-0851-47e9-b295-65c478999999" target="_blank" rel="noreferrer">https://investors.upwork.com/static-files/f251bfeb-0851-47e9-b295-65c478999999</a></li>
+                            </ol>
+                        </section>
+                    </div>
                 </div>
             </main>
         </div>

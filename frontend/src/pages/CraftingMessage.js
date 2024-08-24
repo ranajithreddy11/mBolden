@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/CraftingMessage.css';
+import '../assets/styles/InsightsPages.css';
 import CraftingMessageImage from '../assets/images/Insights/CraftingMessageImage.png'
 import ToDoImage from '../assets/images/Insights/To-Do.svg'
 
@@ -9,8 +9,8 @@ const CraftingMessages = () => {
             <main>
                 <div className="crafting-content-wrapper">
                     <div className="head-section">
-                        <img src={CraftingMessageImage} alt="Crafting Messages" className="head-image"/>
                         <h1>Crafting Compelling Messages in Professional Communication</h1>
+                        <img src={CraftingMessageImage} alt="Crafting Messages" className="head-image"/>
                     </div>
                     <div className="text-section">
                         <h2>Introduction</h2>
@@ -98,9 +98,8 @@ const CraftingMessages = () => {
                             message clear? Is it emotionally engaging? Does it tell a story? Use this as a
                             checklist to ensure your communication will leave a lasting impact.
                         </p>
-                        {/* Add more content as needed */}
-                    </div>
-                    <div className="attachments-section">
+
+                        <div className="attachments-section">
                         <h2>Attachments</h2>
                         <div className="attachment-item">
                             <div className="attachment-icon">
@@ -114,6 +113,7 @@ const CraftingMessages = () => {
                             </div>
                             <div className="attachment-text">Message Development Worksheet Template</div>
                         </div>
+                    </div>
                     </div>
                 </div>
             </main>

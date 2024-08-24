@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/CustomerTransforming.css';
+import '../assets/styles/InsightsPages.css';
 import CustomerTransformingImage from '../assets/images/Insights/CustomerTransformingImage.png'
 
 const CustomerTransforming = () => {
@@ -8,11 +8,11 @@ const CustomerTransforming = () => {
             <main>
                 <div className="crafting-content-wrapper">
                     <div className="head-section">
+                        <h1>Centering the Customer: Transforming Strategy for Future Success</h1>
                         <img
                             src={CustomerTransformingImage}
                             alt="Crafting Messages"
                             className="head-image"/>
-                        <h1>Centering the Customer: Transforming Strategy for Future Success</h1>
                     </div>
                     <div className="text-section">
                         <h2>Executive Summary</h2>
@@ -223,49 +223,21 @@ const CustomerTransforming = () => {
                             transformation, ensuring that customer needs remain at the forefront of every
                             business decision.
                         </p>
-                        <p>
-                            <strong>References</strong>
-                        </p>
-                        <p>
-                            <a href="https://www.zendesk.com/blog/customer-journey-map/"
-                               target="_blank" rel="noreferrer noopener">Customer Journey Mapping</a>
-                            <a href="https://www.gallup.com/cliftonstrengths/en/253676/strengthsfinder.aspx"
-                               target="_blank" rel="noreferrer noopener">Empathy Mapping</a>
-                            <a href="https://www.gartner.com/en/insights/customer-experience"
-                               target="_blank" rel="noreferrer noopener">Immersive Experiences</a>
-                            <a href="https://hbr.org/2020/01/what-is-the-difference-between-feedback-and-advice"
-                               target="_blank" rel="noreferrer noopener">Personalized Feedback</a>
-                            <a href="https://www.forbes.com/sites/forbestechcouncil/2021/05/10/why-video-feedback-is-important-and-how-to-implement-it/?sh=5b23e52b6348"
-                               target="_blank" rel="noreferrer noopener">Face-to-Face Feedback</a>
-                            <a href="https://hbr.org/2021/10/using-ai-to-improve-feedback"
-                               target="_blank" rel="noreferrer noopener">Automation and AI Feedback</a>
-                            <a href="https://www.bain.com/insights/feedback-culture-to-drive-improvement-and-customer-experience/"
-                               target="_blank" rel="noreferrer noopener">Collaborative Feedback</a>
-                            <a href="https://blog.hubspot.com/service/social-media-customer-feedback"
-                               target="_blank" rel="noreferrer noopener">Social Media Feedback</a>
-                            <a href="https://www.strategyzer.com/canvas/value-proposition-canvas"
-                               target="_blank" rel="noreferrer noopener">Value Proposition Design</a>
-                            <a href="https://hbr.org/2016/07/the-elements-of-value"
-                               target="_blank" rel="noreferrer noopener">Measuring Impact</a>
-                            <a href="https://www.forbes.com/sites/forbescommunicationscouncil/2021/08/24/the-importance-of-transparent-communication-for-business-growth/?sh=4a4b9d262014"
-                               target="_blank" rel="noreferrer noopener">Transparent Communication</a>
-                            <a href="https://www.npr.org/sections/npr-extra/2021/06/30/1011428906/npr-x-clubhouse-audio-storytelling"
-                               target="_blank" rel="noreferrer noopener">Narrative Building</a>
-                            <a href="https://blog.hubspot.com/service/brand-alignment"
-                               target="_blank" rel="noreferrer noopener">Brand Alignment</a>
-                            <a href="https://blog.hubspot.com/service/cultural-credibility"
-                               target="_blank" rel="noreferrer noopener">Cultural Credibility</a>
-                            <a href="https://www.bcg.com/publications/2020/customer-service-digital-transformation"
-                               target="_blank" rel="noreferrer noopener">Complex Problem Solving</a>
-                            <a href="https://www.forbes.com/sites/forbestechcouncil/2020/01/29/how-to-establish-innovation-labs-that-drive-real-results/?sh=1b50b3266d3b"
-                               target="_blank" rel="noreferrer noopener">Innovation Labs</a>
-                            <a href="https://blog.hubspot.com/service/inclusive-marketing"
-                               target="_blank" rel="noreferrer noopener">Market Research</a>
-                            <a href="https://www.forbes.com/sites/forbesagencycouncil/2021/08/30/the-importance-of-transparency-in-marketing/?sh=387d3d285541"
-                               target="_blank" rel="noreferrer noopener">Transparency</a>
-                            <a href="https://hbr.org/2020/09/how-brands-can-embrace-social-justice"
-                               target="_blank" rel="noreferrer noopener">Inclusivity and Advocacy</a>
-                        </p>
+                        <section class="reference-section">
+                        <h2>References</h2>
+                            <ol>
+                                <li><a href="https://www.forbes.com/sites/bernardmarr/2022/11/29/the-top-4-customer-experience-trends-in-2023/" target="_blank" rel="noreferrer">The Top 4 Customer Experience Trends in 2023 – Forbes</a></li>
+                                <li><a href="https://www.themarketinghustle.com/blog/the-2023-guide-to-customer-journey-mapping/" target="_blank" rel="noreferrer">The 2023 Guide to Customer Journey Mapping – The Marketing Hustle</a></li>
+                                <li><a href="https://www.questionpro.com/blog/market-research-trends/" target="_blank" rel="noreferrer">Top 11 Market Research Trends in 2023 to Keep an Eye Out for | questionpro.com</a></li>
+                                <li><a href="https://www.hotjar.com/blog/customer-feedback-trends/" target="_blank" rel="noreferrer">6 Leading Customer Feedback Trends to Watch For This Year – Hotjar</a></li>
+                                <li><a href="https://www.forbes.com/sites/forbestechcouncil/2023/02/21/three-ways-to-drive-customer-value-in-2023/" target="_blank" rel="noreferrer">3 Ways To Drive Customer Value In 2023 – Forbes</a></li>
+                                <li><a href="https://www.toaststudio.com/en/6-brand-storytelling-trends-for-2023/" target="_blank" rel="noreferrer">6 Brand Storytelling Trends for 2023 – Toast Studio</a></li>
+                                <li><a href="https://www.forbes.com/sites/bernardmarr/2023/02/13/the-5-biggest-business-trends-in-2023-everyone-must-get-ready-for-now/" target="_blank" rel="noreferrer">The 5 Biggest Business Trends In 2023 Everyone Must Get Ready For Now – Forbes</a></li>
+                                <li><a href="https://www.pinsentmasons.com/out-law/analysis/emerging-trends-diversity-inclusion-2023" target="_blank" rel="noreferrer">Emerging Trends for Diversity and Inclusion in 2023 – Pinsent Masons</a></li>
+                                <li><a href="https://www.i-nexus.com/blog/6-continuous-improvement-project-management-trends-to-watch-2023" target="_blank" rel="noreferrer">6 Continuous Improvement and Project Management Trends to Watch in 2023 – i-nexus.com</a></li>
+                                <li><a href="https://www.forbes.com/sites/forbesbusinesscouncil/2023/07/18/why-customer-centricity-is-a-key-to-long-term-success/" target="_blank" rel="noreferrer">Why Customer Centricity is a Key to Long-Term Success – Forbes</a></li>
+                            </ol>
+                        </section>
                     </div>
                 </div>
             </main>
