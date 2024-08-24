@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/styles/RemoteWork.css';
+import '../assets/styles/InsightsPages.css';
 import RemoteWorkImage from '../assets/images/Insights/RemoteWork.png';
 
 const RemoteWork = () => {
@@ -8,11 +8,11 @@ const RemoteWork = () => {
         <main>
             <div className="crafting-content-wrapper">
                 <div className="head-section">
+                    <h1>Centering the Customer: Transforming Strategy for Future Success</h1>
                     <img
                         src={RemoteWorkImage}
                         alt="Crafting Messages"
                         className="head-image"/>
-                    <h1>Centering the Customer: Transforming Strategy for Future Success</h1>
                 </div>
                 <div className="text-section">
                     <h2>Executive Summary</h2>
@@ -223,49 +223,28 @@ const RemoteWork = () => {
                         transformation, ensuring that customer needs remain at the forefront of every
                         business decision.
                     </p>
-                    <p>
-                        <strong>References</strong>
-                    </p>
-                    <p>
-                        <a href="https://www.zendesk.com/blog/customer-journey-map/"
-                           target="_blank" rel="noreferrer noopener">Customer Journey Mapping</a>
-                        <a href="https://www.gallup.com/cliftonstrengths/en/253676/strengthsfinder.aspx"
-                           target="_blank" rel="noreferrer noopener">Empathy Mapping</a>
-                        <a href="https://www.gartner.com/en/insights/customer-experience"
-                           target="_blank" rel="noreferrer noopener">Immersive Experiences</a>
-                        <a href="https://hbr.org/2020/01/what-is-the-difference-between-feedback-and-advice"
-                           target="_blank" rel="noreferrer noopener">Personalized Feedback</a>
-                        <a href="https://www.forbes.com/sites/forbestechcouncil/2021/05/10/why-video-feedback-is-important-and-how-to-implement-it/?sh=5b23e52b6348"
-                           target="_blank" rel="noreferrer noopener">Face-to-Face Feedback</a>
-                        <a href="https://hbr.org/2021/10/using-ai-to-improve-feedback"
-                           target="_blank" rel="noreferrer noopener">Automation and AI Feedback</a>
-                        <a href="https://www.bain.com/insights/feedback-culture-to-drive-improvement-and-customer-experience/"
-                           target="_blank" rel="noreferrer noopener">Collaborative Feedback</a>
-                        <a href="https://blog.hubspot.com/service/social-media-customer-feedback"
-                           target="_blank" rel="noreferrer noopener">Social Media Feedback</a>
-                        <a href="https://www.strategyzer.com/canvas/value-proposition-canvas"
-                           target="_blank" rel="noreferrer noopener">Value Proposition Design</a>
-                        <a href="https://hbr.org/2016/07/the-elements-of-value"
-                           target="_blank" rel="noreferrer noopener">Measuring Impact</a>
-                        <a href="https://www.forbes.com/sites/forbescommunicationscouncil/2021/08/24/the-importance-of-transparent-communication-for-business-growth/?sh=4a4b9d262014"
-                           target="_blank" rel="noreferrer noopener">Transparent Communication</a>
-                        <a href="https://www.npr.org/sections/npr-extra/2021/06/30/1011428906/npr-x-clubhouse-audio-storytelling"
-                           target="_blank" rel="noreferrer noopener">Narrative Building</a>
-                        <a href="https://blog.hubspot.com/service/brand-alignment"
-                           target="_blank" rel="noreferrer noopener">Brand Alignment</a>
-                        <a href="https://blog.hubspot.com/service/cultural-credibility"
-                           target="_blank" rel="noreferrer noopener">Cultural Credibility</a>
-                        <a href="https://www.bcg.com/publications/2020/customer-service-digital-transformation"
-                           target="_blank" rel="noreferrer noopener">Complex Problem Solving</a>
-                        <a href="https://www.forbes.com/sites/forbestechcouncil/2020/01/29/how-to-establish-innovation-labs-that-drive-real-results/?sh=1b50b3266d3b"
-                           target="_blank" rel="noreferrer noopener">Innovation Labs</a>
-                        <a href="https://blog.hubspot.com/service/inclusive-marketing"
-                           target="_blank" rel="noreferrer noopener">Market Research</a>
-                        <a href="https://www.forbes.com/sites/forbesagencycouncil/2021/08/30/the-importance-of-transparency-in-marketing/?sh=387d3d285541"
-                           target="_blank" rel="noreferrer noopener">Transparency</a>
-                        <a href="https://hbr.org/2020/09/how-brands-can-embrace-social-justice"
-                           target="_blank" rel="noreferrer noopener">Inclusivity and Advocacy</a>
-                    </p>
+                    <section class="reference-section">
+                        <h2>References</h2>
+                            <ol>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Future of Remote Work in the Time of Covid-19, Cornell University Center for Advanced Human Resource Studies, 2021</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">The Future of Work – McKinsey.com</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Challenging the Modern Myths of Remote Working – IBM</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Research on Remote Work in the Era of COVID-19 – Tim Jacks</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Future of Remote Work in the Time of Covid-19, Cornell University Center for Advanced Human Resource Studies, 2021</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Ibid</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Research on Remote Work in the Era of COVID-19 – Tim Jacks</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Future of Remote Work in the Time of Covid-19, Cornell University Center for Advanced Human Resource Studies, 2021</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">The Future of Work – McKinsey.com</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Ibid</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Future of Remote Work in the Time of Covid-19, Cornell University Center for Advanced Human Resource Studies, 2021</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">The Future of Work – McKinsey.com</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Future of Remote Work in the Time of Covid-19, Cornell University Center for Advanced Human Resource Studies, 2021</a></li>
+                                <li><a href="https://www.range.co" target="_blank" rel="noreferrer">Learning to Lead for a Future of Remote Work – Range.co</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">The Future of Work – McKinsey.com</a></li>
+                                <li><a href="https://www.range.co" target="_blank" rel="noreferrer">Learning to Lead for a Future of Remote Work – Range.co</a></li>
+                                <li><a href="https://www.mckinsey.com" target="_blank" rel="noreferrer">Ibid</a></li>
+                            </ol>
+                    </section>
                 </div>
             </div>
         </main>

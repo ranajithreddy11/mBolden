@@ -1,0 +1,217 @@
+
+.head-section {
+    display: flex;
+    align-items: center;
+    background-color: #F1F5F9;
+    margin-top: 2rem;
+    padding: 4rem;
+    justify-content: space-between;
+}
+
+.head-image {
+    width: 50%;
+}
+
+.head-section h1 {
+    font-size: 3.1rem;
+    line-height: 4.8rem;
+    margin: 0;
+    width: 47%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    color: #0F172A;
+    order: 2;
+}
+
+.text-section {
+    background: #F1F5F9;
+    padding: 2% 6%;
+    margin: 2% 5%;
+    border-radius: 2rem;
+}
+
+.text-section h2 {
+    margin: 1.5rem 0 0.75rem 0;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    color:  #263238;
+
+}
+
+.text-section h4 {
+    text-align: left;
+    color: #B92129;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+.text-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    text-align: left;
+    color: #263238;
+    margin: 0;
+}
+
+.charts {
+    display: flex;
+    justify-content: space-around;
+    margin: 4rem auto;
+}
+
+.chart img {
+    width: 90%;
+    height: auto;
+}
+
+.chart2 img {
+    margin:1rem;
+}
+
+.reference-section h2 {
+    color: #2F5E8F;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-align: left;
+    margin: 3rem 0 1rem 0;
+}
+.reference-section li {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: left;
+    color: #263238;
+}
+
+.reference-section li a{
+    text-decoration: none;
+    color: #263238;
+    word-break: break-all; 
+    overflow-wrap: break-word;
+}
+
+.attachments-section {
+    margin-top: 3rem;
+    border-radius: 8px;
+}
+
+.attachments-section h2 {
+    color: #2F5E8F;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.attachment-item {
+    display: flex;
+    align-items: center;
+    background-color: #2F5E8F;
+    border-radius: 1rem;
+    padding: 1.5rem 4rem;
+    margin-bottom: 2rem;
+}
+
+.attachment-icon {
+    margin-right: 1.2rem;
+}
+
+.todo-image {
+    width: 2.5rem;
+    height: auto;
+}
+
+.attachment-text {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2rem;
+    text-align: left;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        font-size: 14px;
+    }
+
+    .head-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    :root {
+        font-size: 12px;
+    }
+    
+    .head-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem;
+        background-color: white;
+    }
+
+    .head-section h1{
+        order:0;
+    }
+
+    .head-image {
+        width: 100%;
+        align-items: center;
+    }
+
+    .head-section h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .text-section{
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .chart img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .chart2 img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+@media (max-width: 480px) {
+    :root {
+        font-size: 10px;
+    }
+
+    .head-section{
+        padding: 1rem;
+    }
+
+    .head-section h1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        margin: 2rem 0;
+    }
+}
