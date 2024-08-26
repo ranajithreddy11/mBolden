@@ -30,7 +30,9 @@ const Results = () => {
             <Link to="/contact">
               <button className="contact-us-btn">CONTACT US</button>
             </Link>
+            <Link to="/contacts">
               <button className="get-template-btn">GET TEMPLATE</button>
+            </Link>
             </div>
           </div>
         </div>
