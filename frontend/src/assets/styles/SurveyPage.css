@@ -3,70 +3,83 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  height: 100vh;
-  padding: 20% 12%;
-  text-align: center;
+  min-height: 100vh;
+  padding: 5% 12%;
   box-sizing: border-box;
 }
 
 .internalcommunication {
-  font-family: 'Inter', sans-serif;
-  font-size: 40px;
-  font-weight: 500;
-  line-height: 80px;
-  text-align: left;
   color: #2F5E8F;
+  font-family: 'Inter', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 4rem;
+  text-align: left;
+  margin: 1.5rem 0;
 }
 
-.description {
+.questionNumber {
   font-family: 'Inter', sans-serif;
-  font-size: 35px;
+  font-size: 1.5rem;
   font-weight: 500;
-  line-height: 42.36px;
+  line-height: 2rem;
   text-align: left;
   color: #263238;
+  margin: 0.5rem 0;
+}
+
+.question{
+  font-family: 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  line-height: 2.7rem;
+  text-align: left;
+  color: #263238;
+  margin: 0.5rem 0;
 }
 
 /* Single-column layout for options */
 .options-single-column {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 100%;
+  width: 40%;
+  margin: 2.5rem 0;
 }
 
 /* Two-column layout for options */
 .options-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
   width: 100%;
+  margin: 2.5rem 0;
+  column-gap: 3rem;
 }
 
 .option {
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
   text-align: left;
-  padding: 10px 16px;
-  gap: 14px;
   border: 1px solid #2F5E8F;
   display: flex;
   align-items: center;
+  opacity: 0px;
+  padding: 0rem 1rem;
+  border-radius: 0.5rem;
 }
 
-.options label {
+.option label {
   font-family: 'Inter', sans-serif;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 600;
-  line-height: 30.26px;
+  line-height: 2rem;
   text-align: left;
   color: #263238;
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 input[type="radio"],
 input[type="checkbox"] {
-  width: 20px;
-  height: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
   cursor: pointer;
   accent-color: #2F5E8F;
 }
@@ -78,23 +91,64 @@ input[type="checkbox"] {
 }
 
 .next {
-  border-radius: 6px;
+  border-radius: 1rem;
   cursor: pointer;
   text-decoration: none;
+  width: 30%;
   font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 2rem;
   text-align: center;
-  margin: 2.2rem 0;
-  padding: 0.5rem;
-  border: 2px solid #2F5E8F;
-  background-color: #fff;
   color: #2F5E8F;
-  width: 30%;
+  background-color: #fff;
+  border: 0.125rem solid #2F5E8F;
+  padding: 0.7rem 0;
 }
 
 .next:hover {
   background-color: #2F5E8F;
   color: #fff;
 }
+
+@media (max-width: 1024px) {
+  :root {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+      font-size: 12px;
+  }
+
+  .options-single-column{
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+      font-size: 10px;
+  }
+
+  .options-single-column{
+    width: 100%;
+  }
+
+  .internalcommunication{
+    text-align: center;
+  }
+
+  .next{
+    width: 40%;
+  }
+
+  .options-grid{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2.5rem 0;
+  }
+}
+

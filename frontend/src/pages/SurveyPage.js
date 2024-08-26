@@ -100,8 +100,11 @@ const SurveyPage = () => {
     return (
         <div className="survey-container">
             <h2 className="internalcommunication">{section.title}</h2>
-            <p className="description">
-                Question {questionNumber}/{totalQuestions}:<br/> {question.question}
+            <p className="questionNumber">
+                Question {questionNumber}/{totalQuestions}:
+            </p>
+            <p className="question">{
+                question.question}
             </p>
             <div className={optionClass}>
                 {question
