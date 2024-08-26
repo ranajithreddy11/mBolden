@@ -10,6 +10,7 @@ html, body {
     align-items: center;
     flex-direction: column;
     background: #FDFFFC;
+    min-height: 65vh;
 }
 
 .end-capture-container {
@@ -98,7 +99,7 @@ label {
     margin: 1rem 0;
 }
 
-input[type="email"] {
+.end-text-box input[type="email"] {
     padding: 0.75rem;
     border: 1px solid #C7CCCB;
     border-radius: 6px;

@@ -5,6 +5,7 @@
   align-items: flex-start;
   padding: 5% 12%;
   box-sizing: border-box;
+  min-height: 65vh;
 }
 
 .internalcommunication {
@@ -128,6 +129,10 @@ input[type="checkbox"] {
 @media (max-width: 480px) {
   :root {
       font-size: 10px;
+  }
+
+  .survey-container{
+    padding: 8% 12%;
   }
 
   .options-single-column{
