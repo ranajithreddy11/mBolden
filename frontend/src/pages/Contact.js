@@ -13,6 +13,7 @@ function Contact() {
 
     const [formErrors, setFormErrors] = useState({});
     const [formStatus, setFormStatus] = useState('');
+    const [statusType, setStatusType] = useState(''); // 'success' or 'error'
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -55,15 +56,19 @@ function Contact() {
     
                 if (response.ok && result.success) {
                     setFormStatus('Message sent successfully!');
+                    setStatusType('success');
                     setFormData({ firstName: '', lastName: '', email: '', phone: '', message: '' });
                 } else {
                     setFormStatus('Failed to send message. Please try again.');
+                    setStatusType('error');
                 }
             } catch (error) {
                 setFormStatus('Failed to send message. Please try again.');
+                setStatusType('error');
             }
         } else {
             setFormStatus('Please fill in all required fields.');
+            setStatusType('error');
         }
     };
 
@@ -136,7 +141,7 @@ function Contact() {
                             {formErrors.message && <span className="error">{formErrors.message}</span>}
                         </div>
                         <button type="submit" className="send-message-button">Send Message</button>
-                        {formStatus && <p className="form-status">{formStatus}</p>}
+                        {formStatus && <p className={`form-status ${statusType}`}>{formStatus}</p>}
                     </form>
                 </div>
             </section>
