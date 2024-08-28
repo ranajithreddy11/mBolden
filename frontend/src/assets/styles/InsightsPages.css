@@ -137,13 +137,14 @@
     height: auto;
 }
 
-.attachment-text {
+.attachment-text a{
     color: #ffffff;
     font-family: 'Inter', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 2rem;
     text-align: left;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {

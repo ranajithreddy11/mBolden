@@ -30,13 +30,13 @@ const LandingPage = () => {
                         <button href="/about" className="learn-more-button">Learn More</button>
                     </Link>
                     <div className="social-icons">
-                        <a href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
+                        <a href="https://www.linkedin.com/company/mbolden-consulting/" target="_blank" rel="noreferrer noopener">
                             <img src={LinkedInIcon} alt="LinkedIn" />
                         </a>
-                        <a href="https://www.instagram.com" target="_blank" rel="noreferrer noopener">
+                        <a href="https://www.instagram.com/mbolden_consulting" target="_blank" rel="noreferrer noopener">
                             <img src={InstaIcon} alt="Instagram" />
                         </a>
-                        <a href="https://www.facebook.com" target="_blank" rel="noreferrer noopener">
+                        <a href="https://www.facebook.com/profile.php?id=61557755199538" target="_blank" rel="noreferrer noopener">
                             <img src={FacebookIcon} alt="Facebook" />
                         </a>
                     </div>

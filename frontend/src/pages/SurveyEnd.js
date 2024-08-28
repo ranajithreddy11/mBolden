@@ -1,20 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../assets/styles/SurveyEnd.css';
-import {useNavigate, useLocation} from 'react-router-dom';
-import Capture from '../assets/images/Capture/Capture.png'
-import CaptureMobile from '../assets/images/Capture/CaptureMobile.png'
+import { useNavigate, useLocation } from 'react-router-dom';
+import Capture from '../assets/images/Capture/Capture.png';
+import CaptureMobile from '../assets/images/Capture/CaptureMobile.png';
 
 const SurveyEnd = () => {
     const navigate = useNavigate();
     const location = useLocation();
-    const interimScore = location.state
-        ?.interimScore || 0;
+    const [email, setEmail] = useState('');
+    const interimScore = location.state?.interimScore || 0;
 
     const handleNext = () => {
         navigate('/capture/results', {
-            state: {
-                totalScore: interimScore
-            }
+            state: { totalScore: interimScore, email: email },  // Pass the email to the results page
         });
     };
 
@@ -23,13 +21,13 @@ const SurveyEnd = () => {
             <div className="end-capture-container">
                 <div className="end-content-wrapper">
                     <div className="end-image-box">
-                        <img src={Capture} alt="Team Meeting" className="end-image"/>
+                        <img src={Capture} alt="Team Meeting" className="end-image" />
                     </div>
                     <div className="end-text-box">
                         <h1>
                             Thank you for completing CAPTURE, our Internal Communications Audit Survey!
                         </h1>
-                        <img src={CaptureMobile} alt="Team Meeting" className="end-image-mobile"/>
+                        <img src={CaptureMobile} alt="Team Meeting" className="end-image-mobile" />
                         <p>
                             We appreciate the time and effort you invested in this important assessment.
                             Your responses have provided high-level insights into the current state of
@@ -41,8 +39,17 @@ const SurveyEnd = () => {
                         </p>
                         <form>
                             <label htmlFor="email">Email</label>
-                            <input type="email" id="email" name="email" required/>
-                            <button type="submit" className="end-capture" onClick={handleNext}>NEXT</button>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
+                            <button type="button" className="end-capture" onClick={handleNext}>
+                                NEXT
+                            </button>
                         </form>
                     </div>
                 </div>

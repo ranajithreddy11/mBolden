@@ -119,7 +119,7 @@ html, body {
 .results-buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .contact-us-btn,
@@ -147,6 +147,22 @@ html, body {
     background-color: #2F5E8F;
     color: #fff;
 }
+
+
+.success-message p{
+    color: green;
+    margin: 1rem 0 0 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.error-message p{
+    color: red;
+    margin: 1rem 0 0 0;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
 
 @media (max-width: 768px) {
     :root {
@@ -187,9 +203,6 @@ html, body {
         width: 100%;
         margin-bottom: 1rem;
         border: 2px solid #2F5E8F;
-    }
-
-    .contact-us-btn {
         margin-bottom: 2rem;
     }
 }
@@ -206,5 +219,10 @@ html, body {
 
     .results-text-box{
         margin: 5% 8%;
+    }
+
+    .contact-us-btn,
+    .get-template-btn {
+        margin-bottom: 1rem;
     }
 }
