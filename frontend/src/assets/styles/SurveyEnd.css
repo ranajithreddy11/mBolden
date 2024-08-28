@@ -136,6 +136,13 @@ label {
     color: #fff;
 }
 
+
+.email-error-message {
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+}
+
 @media (max-width: 1024px) {
     :root {
         font-size: 12px;

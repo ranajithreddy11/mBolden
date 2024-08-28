@@ -8,12 +8,21 @@ const SurveyEnd = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [email, setEmail] = useState('');
+    const [emailError, setEmailError] = useState('');
     const interimScore = location.state?.interimScore || 0;
 
     const handleNext = () => {
-        navigate('/capture/results', {
-            state: { totalScore: interimScore, email: email },  // Pass the email to the results page
-        });
+        // Simple client-side email validation
+        if (!email) {
+            setEmailError('Email is required');
+        } else if (!/\S+@\S+\.\S+/.test(email)) {
+            setEmailError('Please enter a valid email address');
+        } else {
+            setEmailError('');
+            navigate('/capture/results', {
+                state: { totalScore: interimScore, email: email },  // Pass the email to the results page
+            });
+        }
     };
 
     return (
@@ -47,6 +56,7 @@ const SurveyEnd = () => {
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
+                            {emailError && <span className="email-error-message">{emailError}</span>}
                             <button type="button" className="end-capture" onClick={handleNext}>
                                 NEXT
                             </button>

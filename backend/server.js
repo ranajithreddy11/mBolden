@@ -29,6 +29,34 @@ const transporter = nodemailer.createTransport({
     }
 });
 
+// Results Endpoint (existing)
+app.post('/api/results', async (req, res) => {
+    const { email, score } = req.body;
+
+    // Define the email content
+    const mailOptions = {
+        from: 'mBolden <ranureddy18@gmail.com>',
+        to: email,
+        subject: 'Your Survey Results and Template',
+        text: `Thank you for completing the survey! Your score is ${score}. Please find our free Action Plan Template attached.`,
+        attachments: [
+            {
+                filename: 'IC_Action_Plan_Template.pdf',
+                path: './internal-communication-audit-action plan template.pdf' // Path to your template file
+            }
+        ]
+    };
+
+    try {
+        await transporter.sendMail(mailOptions);
+        res.status(200).send('Email sent successfully');
+    } catch (error) {
+        console.error('Error sending email:', error);
+        res.status(500).send('Error sending email');
+    }
+});
+
+
 // Contact Form Endpoint
 app.post('/api/contact', async (req, res) => {
     const { firstName, lastName, email, phone, message } = req.body;
