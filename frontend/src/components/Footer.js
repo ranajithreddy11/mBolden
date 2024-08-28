@@ -31,9 +31,9 @@ const Footer = () => {
                 </div>
                 <div className="footer-social">
                     <div className="social">
-                        <a href="#facebook"><img src={facebook} alt="Facebook"/></a>
-                        <a href="#linkedin"><img src={linkedin} alt="LinkedIn"/></a>
-                        <a href="#instagram"><img src={instagram} alt="Instagram"/></a>
+                        <a href="https://www.facebook.com/profile.php?id=61557755199538"><img src={facebook} alt="Facebook"/></a>
+                        <a href="https://www.linkedin.com/company/mbolden-consulting/"><img src={linkedin} alt="LinkedIn"/></a>
+                        <a href="https://www.instagram.com/mbolden_consulting"><img src={instagram} alt="Instagram"/></a>
                     </div>
                 </div>
             </div>

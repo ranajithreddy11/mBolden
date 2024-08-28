@@ -76,6 +76,11 @@
     margin-top: 1rem;
 }
 
+
+.contact-email  a{
+    text-decoration: none;
+    color: #011334;
+}
 .contact-email img {
     margin-right: 0.5rem;
 }
@@ -156,6 +161,21 @@
     line-height: 24.51px;
     margin-top: 1.5rem;
 }
+
+.error {
+    color: red;
+    font-size: 1em;
+    margin-top: 5px;
+}
+
+.form-status {
+    margin-top: 15px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+}
+
+
 @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;

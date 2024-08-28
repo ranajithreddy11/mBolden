@@ -3,6 +3,9 @@ import '../assets/styles/InsightsPages.css';
 import CraftingMessageImage from '../assets/images/Insights/CraftingMessageImage.png'
 import ToDoImage from '../assets/images/Insights/To-Do.svg'
 
+import AudienceAnalysisWorksheet from '../assets/data/AudienceAnalysis.pdf';
+import MessageDevelopmentWorksheet from '../assets/data/MessageDevelopment.pdf';
+
 const CraftingMessages = () => {
     return (
         <div className="crafting-message-page">
@@ -105,13 +108,21 @@ const CraftingMessages = () => {
                             <div className="attachment-icon">
                                 <img src={ToDoImage} alt="Crafting Messages" className="todo-image"/>
                             </div>
-                            <div className="attachment-text">Audience Analysis Worksheet Template</div>
+                            <div className="attachment-text">
+                                <a href={AudienceAnalysisWorksheet} download="Audience_Analysis_Worksheet_Template.pdf">
+                                    Audience Analysis Worksheet Template
+                                </a>
+                            </div>
                         </div>
                         <div className="attachment-item">
                             <div className="attachment-icon">
                                 <img src={ToDoImage} alt="Crafting Messages" className="todo-image"/>
                             </div>
-                            <div className="attachment-text">Message Development Worksheet Template</div>
+                            <div className="attachment-text">
+                                <a href={MessageDevelopmentWorksheet} download="Message_Development_Worksheet_Template.pdf">
+                                    Message Development Worksheet Template
+                                </a>
+                            </div>
                         </div>
                     </div>
                     </div>

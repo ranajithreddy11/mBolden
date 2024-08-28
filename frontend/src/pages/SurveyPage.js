@@ -1,62 +1,61 @@
-import React, {useState, useMemo} from 'react';
-import {useNavigate} from 'react-router-dom';
+import React, { useState, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../assets/styles/SurveyPage.css';
 import surveyData from '../assets/data/surveyData.json';
 
 const SurveyPage = () => {
-    const [currentSection,
-        setCurrentSection] = useState(0);
-    const [currentQuestion,
-        setCurrentQuestion] = useState(0);
-    const [selectedOptions,
-        setSelectedOptions] = useState({});
+    const [currentSection, setCurrentSection] = useState(0);
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [selectedOptions, setSelectedOptions] = useState({});
+    const [error, setError] = useState('');
     const navigate = useNavigate();
 
     const section = useMemo(() => surveyData.sections[currentSection], [currentSection]);
     const question = useMemo(() => section.questions[currentQuestion], [section, currentQuestion]);
-    const totalQuestions = useMemo(() => surveyData.sections.reduce((total, section) => total + section.questions.length, 0), []);
-    const questionNumber = useMemo(() => surveyData.sections.slice(0, currentSection).reduce((total, section) => total + section.questions.length, 0) + currentQuestion + 1, [currentSection, currentQuestion]);
+    const totalQuestions = useMemo(
+        () => surveyData.sections.reduce((total, section) => total + section.questions.length, 0),
+        []
+    );
+    const questionNumber = useMemo(
+        () =>
+            surveyData.sections
+                .slice(0, currentSection)
+                .reduce((total, section) => total + section.questions.length, 0) +
+            currentQuestion +
+            1,
+        [currentSection, currentQuestion]
+    );
 
     const handleOptionChange = (points, index) => {
         const currentKey = `${currentSection}-${currentQuestion}`;
         const isSingleOption = question.type === 'single';
 
-        setSelectedOptions(prev => {
+        setSelectedOptions((prev) => {
             if (isSingleOption) {
-                // For single-option questions (radio), replace the previous selection with the
-                // new one
                 return {
                     ...prev,
-                    [currentKey]: [
-                        {
-                            points,
-                            index
-                        }
-                    ]
+                    [currentKey]: [{ points, index }]
                 };
             } else {
-                // For multiple-option questions (checkbox), toggle the selection
                 const updatedOptions = prev[currentKey] || [];
-                const isChecked = updatedOptions.some(opt => opt.index === index);
+                const isChecked = updatedOptions.some((opt) => opt.index === index);
 
                 if (isChecked) {
                     return {
                         ...prev,
-                        [currentKey]: updatedOptions.filter(opt => opt.index !== index)
+                        [currentKey]: updatedOptions.filter((opt) => opt.index !== index)
                     };
                 } else {
                     return {
                         ...prev,
-                        [currentKey]: [
-                            ...updatedOptions, {
-                                points,
-                                index
-                            }
-                        ]
+                        [currentKey]: [...updatedOptions, { points, index }]
                     };
                 }
             }
         });
+
+        // Clear error message when an option is selected
+        setError('');
     };
 
     const calculateTotalScore = () => {
@@ -68,6 +67,14 @@ const SurveyPage = () => {
     };
 
     const handleNext = () => {
+        const currentKey = `${currentSection}-${currentQuestion}`;
+        const isOptionSelected = selectedOptions[currentKey] && selectedOptions[currentKey].length > 0;
+
+        if (!isOptionSelected) {
+            setError('Please select at least one option to proceed.');
+            return;
+        }
+
         const updatedScore = calculateTotalScore();
 
         if (currentQuestion < section.questions.length - 1) {
@@ -77,9 +84,7 @@ const SurveyPage = () => {
             setCurrentQuestion(0);
         } else {
             navigate('/capture/surveyend', {
-                state: {
-                    interimScore: updatedScore
-                }
+                state: { interimScore: updatedScore }
             });
         }
     };
@@ -93,9 +98,7 @@ const SurveyPage = () => {
         }
     };
 
-    const optionClass = question.options.length > 3
-        ? 'options-grid'
-        : 'options-single-column';
+    const optionClass = question.options.length > 3 ? 'options-grid' : 'options-single-column';
 
     return (
         <div className="survey-container">
@@ -103,34 +106,36 @@ const SurveyPage = () => {
             <p className="questionNumber">
                 Question {questionNumber}/{totalQuestions}:
             </p>
-            <p className="question">{
-                question.question}
-            </p>
+            <p className="question">{question.question}</p>
             <div className={optionClass}>
-                {question
-                    .options
-                    .map((option, index) => (
-                        <div key={index} className="option">
-                            <input
-                                type={question.type === 'single'
-                                ? 'radio'
-                                : 'checkbox'}
-                                name={`question-${currentSection}-${currentQuestion}`}
-                                value={option.points}
-                                id={`option-${index}`}
-                                checked={selectedOptions[`${currentSection}-${currentQuestion}`]
-                                ?.some(opt => opt.index === index) || false}
-                                onChange={() => handleOptionChange(option.points, index)}/>
-                            <label htmlFor={`option-${index}`}>{option.text}</label>
-                        </div>
-                    ))}
+                {question.options.map((option, index) => (
+                    <div key={index} className="option">
+                        <input
+                            type={question.type === 'single' ? 'radio' : 'checkbox'}
+                            name={`question-${currentSection}-${currentQuestion}`}
+                            value={option.points}
+                            id={`option-${index}`}
+                            checked={
+                                selectedOptions[`${currentSection}-${currentQuestion}`]?.some(
+                                    (opt) => opt.index === index
+                                ) || false
+                            }
+                            onChange={() => handleOptionChange(option.points, index)}
+                        />
+                        <label htmlFor={`option-${index}`}>{option.text}</label>
+                    </div>
+                ))}
             </div>
+            {error && <p className="form-error-message">{error}</p>}
             <div className="navigation">
                 {!(currentSection === 0 && currentQuestion === 0) && (
-                    <button className="next" onClick={handlePrevious}>Previous</button>
+                    <button className="previous" onClick={handlePrevious}>
+                        Previous
+                    </button>
                 )}
                 <button className="next" onClick={handleNext}>
-                    {currentSection === surveyData.sections.length - 1 && currentQuestion === section.questions.length - 1
+                    {currentSection === surveyData.sections.length - 1 &&
+                    currentQuestion === section.questions.length - 1
                         ? 'Get Results'
                         : 'Next'}
                 </button>
