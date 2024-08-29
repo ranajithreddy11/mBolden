@@ -24,8 +24,8 @@ mongoose.connect('mongodb://localhost:27017/your-database-name', {
 const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-        user: 'ranureddy18@gmail.com',
-        pass: 'ykrtlwjqaabiijqr' // Use your app password
+        user: '',
+        pass: '' // Use your app password
     }
 });
 
@@ -33,12 +33,26 @@ const transporter = nodemailer.createTransport({
 app.post('/api/results', async (req, res) => {
     const { email, score } = req.body;
 
+    // Determine the description based on the score
+    let description = '';
+    if (score >= 16 && score <= 20) {
+        description = 'is Excellent. Your internal communications are well-developed and effective.';
+    } else if (score >= 8 && score <= 15) {
+        description = "is Good, but there's room for improvement. Consider reviewing specific areas for enhancement.";
+    } else if (score >= 0 && score <= 7) {
+        description = 'needs Improvement. A comprehensive internal communications diagnostic is recommended.';
+    } else {
+        return res.status(400).send('Invalid score');
+    }
+
     // Define the email content
     const mailOptions = {
-        from: 'mBolden <ranureddy18@gmail.com>',
+        from: 'mBolden <email>',
         to: email,
         subject: 'Your Survey Results and Template',
-        text: `Thank you for completing the survey! Your score is ${score}. Please find our free Action Plan Template attached.`,
+        text: `Based on your replies, your Internal Communications Audit score was ${score} / 20 points, which is an indication that internal communications in your company ${description}
+        
+Please find our free Action Plan Template attached.`,
         attachments: [
             {
                 filename: 'IC_Action_Plan_Template.pdf',
@@ -70,8 +84,8 @@ app.post('/api/contact', async (req, res) => {
     }
 
     const mailOptions = {
-        from: 'mBolden <ranureddy18@gmail.com>',
-        to: 'ranureddy18@gmail.com',
+        from: 'mBolden <email>',
+        to: 'email',
         subject: 'New Contact Form Submission',
         html: `
             <h3>You have a new contact form submission:</h3>
