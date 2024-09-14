@@ -9,7 +9,7 @@ import GigEconomyImage from '../assets/images/Insights/GigEconomyImage.png'
 function Whitepapers() {
     return (
         <div className="whitepapers-container">
-          <h1>White Papers</h1>
+          <h1>Insights</h1>
             <div className="whitepaper-item">
                 <Link to="/insights/crafting-message" className="whitepaper-link">
                     <div className="whitepaper-content">

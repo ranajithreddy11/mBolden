@@ -1,3 +1,4 @@
+
 .landing-page {
     font-family: Arial, sans-serif;
 }
@@ -44,7 +45,7 @@
 .hero-content p {
     margin: 1.25rem 0;
     font-family: 'Roboto',sans-serif;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 2.8rem;
     text-align: left;
@@ -72,15 +73,16 @@
     border: 0.125rem solid white;
 }
 
-.hero-image {
+.hero-video {
     height: auto;
-    border-radius: 0.625rem;
     right: 0;
     margin-right: 5%;
+    width:43%;
 }
 
-.image-hero {
+.video-hero {
     width: 100%;
+    border-radius: 1rem;
 }
 
 .social-icons {
@@ -88,12 +90,12 @@
 }
 
 .social-icons a {
-    margin-right: 2.5rem;
+    margin-right: 4rem;
 }
 
 .social-icons img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 /* Capture Section */
@@ -101,7 +103,6 @@
     display: flex;
     align-items: center;
     padding: 5%;
-    box-shadow: 0rem 0.25rem 2.5rem 0rem #0000000D;
     background: #F1F5F9;
 }
 
@@ -181,12 +182,12 @@
 }
 
 .testimonial {
-    max-width: 30%;
+    max-width: 90%;
 }
 
 .testimonial-logo {
     font-size: 2rem;
-    margin-bottom: 0.625rem;
+    margin:auto;
 }
 
 .testimonial p {
@@ -238,6 +239,31 @@
     height: auto;
     object-fit: contain; 
 }
+
+.testimonials-carousel .slick-dots {
+    bottom: -2rem; /* Position of the dots */
+}
+
+.testimonials-carousel .slick-dots li button:before {
+    font-size: 1rem;
+    color: #2F5E8F; /* Dot color */
+}
+
+.testimonials-carousel .slick-dots li.slick-active button:before {
+    color: #2F5E8F; /* Active dot color */
+}
+
+.testimonials-carousel .testimonial {
+    text-align: center;
+    padding: 1.25rem;
+}
+
+.testimonials-carousel .testimonial-logo {
+    width: auto;
+    height: 3rem;
+    margin: 1rem auto;
+}
+
 
 @media (max-width: 1270px) {
 
@@ -322,8 +348,8 @@
         padding: 70px 0px;
     }
 
-    .hero-image {
-        max-width: 70%;
+    .hero-video {
+        width: 70%;
         margin: auto;
     }
 
@@ -334,7 +360,6 @@
     .capture-section {
         padding: 20px 10px;
         background-color: #EAF2FB;
-        box-shadow: 0rem 0.25rem 2.5rem 0rem #0000000D;
     }
 
     .capture-content{
@@ -352,6 +377,7 @@
         text-align: center;
         font-size: 4rem;
         color: #0F172A;
+        line-height: 4.2rem;
     }
     .capture-content p,
     .testimonials-section p{
@@ -404,4 +430,9 @@
         line-height:3rem;
         margin: 3rem auto;
     }
+
+    .testimonials-carousel .testimonial-logo {
+        height: 4.5rem;
+    }
+    
 }

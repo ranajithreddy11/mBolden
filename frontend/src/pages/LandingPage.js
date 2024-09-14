@@ -1,9 +1,11 @@
 import React from 'react';
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 import '../assets/styles/LandingPage.css';
 import { Link } from 'react-router-dom';
 
 // Import images
-import heroImage from '../assets/images/LandingPage/hero-image.png';
 import captureImage2 from '../assets/images/LandingPage/capture-image2.png';
 import FacebookIcon from '../assets/images/Facebook.svg';
 import InstaIcon from '../assets/images/Instagram.svg';
@@ -15,8 +17,41 @@ import PatsClientLogo1 from '../assets/images/LandingPage/PastClientLogo1.png';
 import PatsClientLogo2 from '../assets/images/LandingPage/PastClientLogo2.png';
 import PatsClientLogo3 from '../assets/images/LandingPage/PastClientLogo3.png';
 import PastClientLogo4 from '../assets/images/LandingPage/PastClientLogo4.png';
+import heroVideo from '../assets/images/LandingPage/hero.mp4'
 
 const LandingPage = () => {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,   // Number of testimonials to show at once
+        slidesToScroll: 1, // Scroll one testimonial at a time
+        autoplay: true,    // Automatically move to next slide
+        autoplaySpeed: 3000,
+        arrows: false,     // Hide next/prev arrows
+
+        responsive: [
+            {
+                breakpoint: 1024, // iPads and smaller devices
+                settings: {
+                    slidesToShow: 2, // Show 2 testimonials on iPads
+                    slidesToScroll: 1,
+                    infinite: true,  // Keep looping
+                },
+            },
+            {
+                breakpoint: 768, // Mobile devices
+                settings: {
+                    slidesToShow: 1, // Show 1 testimonial on mobile
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+        ],
+    };
+
+
     return (
         <div className="landing-page">
 
@@ -25,7 +60,7 @@ const LandingPage = () => {
                 <div className="hero-content">
                     <h1>Be Bold, Be Agile</h1>
                     <h2>Drive Change</h2>
-                    <p>Empowering teams by focusing on people, strategy, and culture</p>
+                    <p>Empowering teams through people, strategy, and culture</p>
                     <Link to="/about">
                         <button href="/about" className="learn-more-button">Learn More</button>
                     </Link>
@@ -41,8 +76,11 @@ const LandingPage = () => {
                         </a>
                     </div>
                 </div>
-                <div className="hero-image">
-                <img src={heroImage} alt="Team" className="image-hero" />
+                <div className="hero-video">
+                    <video className="video-hero" autoPlay muted loop>
+                        <source src={heroVideo} type="video/mp4" />
+                            Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
 
@@ -50,22 +88,22 @@ const LandingPage = () => {
             <div className="capture-section">
                 <img src={captureImage2} alt="Capture" className="capture-image" />
                 <div className="capture-content">
-                    <h2>Capture</h2>
+                    <h2>Assess Your Internal Communication Effectiveness</h2>
                     <p>
-                        Try our Internal Communications Diagnostic Survey Tool - “Capture.” This intuitive survey is designed to empower organizations like yours to evaluate the effectiveness of internal communication strategies.
+                    Discover the impact of your communication strategies with <b>Capture</b>, our free Internal Communications Diagnostic Survey. In just 5 minutes, identify strengths, uncover opportunities for improvement, and gain actionable insights to boost team collaboration and engagement.
                     </p>
-                    <p>By completing this brief survey, you’ll gain valuable insights into your strengths and potential areas for improvement.</p>
+                    <p>As a bonus, you'll <b>receive a complimentary Internal Communications Action Plan template with your results</b>, empoweing you to take immediate, effective steps.</p>
                     <Link to="/capture">
-                        <button className="get-started-button">Learn More</button>
+                        <button className="get-started-button">Start Now</button>
                     </Link>
                 </div>
                 <img src={captureImage2} alt="Capture" className="capture-image2" />
             </div>
 
-            {/* Testimonials Section */}
+            {/* Testimonials Section with Carousel */}
             <div className="testimonials-section">
                 <h2>Satisfied Customers</h2>
-                <div className="testimonials">
+                <Slider {...settings} className="testimonials-carousel">
                     <div className="testimonial">
                         <img src={logo1} alt="Logo1" className="testimonial-logo" />
                         <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
@@ -78,7 +116,7 @@ const LandingPage = () => {
                         <img src={logo3} alt="Logo3" className="testimonial-logo" />
                         <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
                     </div>
-                </div>
+                </Slider>
             </div>
 
             {/* End Section */}
