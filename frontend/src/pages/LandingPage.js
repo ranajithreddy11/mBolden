@@ -77,7 +77,7 @@ const LandingPage = () => {
                     </div>
                 </div>
                 <div className="hero-video">
-                    <video className="video-hero" autoPlay muted loop>
+                    <video className="video-hero" autoPlay muted loop playsInline>
                         <source src={heroVideo} type="video/mp4" />
                             Your browser does not support the video tag.
                     </video>
