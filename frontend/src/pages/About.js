@@ -49,15 +49,15 @@ const About = () => {
             {
                 name: 'Instagram',
                 icon: Instagram,
-                url: 'https://www.instagram.com/mbolden_consulting'
+                url: 'https://instagram.com'
             }, {
                 name: 'Facebook',
                 icon: Facebook,
-                url: 'https://www.facebook.com/profile.php?id=61557755199538'
+                url: 'https://facebook.com'
             }, {
                 name: 'LinkedIn',
                 icon: LinkedIn,
-                url: 'https://www.linkedin.com/company/mbolden-consulting/'
+                url: 'https://linkedin.com'
             }
         ]
     };
