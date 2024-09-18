@@ -106,15 +106,18 @@ const LandingPage = () => {
                 <Slider {...settings} className="testimonials-carousel">
                     <div className="testimonial">
                         <img src={logo1} alt="Logo1" className="testimonial-logo" />
-                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
+                        <h3>"They aligned or leaders”</h3>
+                        <p>“mBolden helped us prepare for the new year, building our strategy, plan, and success measures. They aligned our leaders on what we need to achieve and how we'll do it. The facilitation was seamless and the team was helpful and knowledgeable. Their real-world experience was amazing."</p>
                     </div>
                     <div className="testimonial">
                         <img src={logo2} alt="Logo2" className="testimonial-logo" />
-                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
+                        <h3>“Thanks for the great advice…”</h3>
+                        <p>"Thanks mBolden for the great advice and support around business growth and team planning. Combining long-term vision with short-term goals lets me know we're headed in the right direction. You really care, not just about the business, but about the people behind it too. Looking forward to continuing our work together!"</p>
                     </div>
                     <div className="testimonial">
                         <img src={logo3} alt="Logo3" className="testimonial-logo" />
-                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
+                        <h3>“Our experience was great”</h3>
+                        <p>“The advice and project support from mBolden was instrumental in helping us build a new service offering. They listened to what we wanted and then delivered it. Our experience was great. We would recommend mBolden without hesitation for any consulting projects."</p>
                     </div>
                 </Slider>
             </div>
