@@ -817,6 +817,8 @@
   .about-container-3 {
     width: 100%;
     margin: 0 auto;
+    height:auto;
+    max-width:800px;
     
     
   }
@@ -830,8 +832,9 @@
   
     border-radius: 15px;
     border:1px solid black;
-    height:500px;
+    height:auto;
     margin-top: 20px;
+    background-color:white;
     
 
   }
@@ -842,17 +845,22 @@
     justify-content: space-between;
     align-items: flex-start; /* Center the logo and info vertically */
     width: 100%; /* Ensure full width */
+    height:auto;
     box-sizing: border-box;
     padding: 20px;
+    
+
+
+    
     
   }
   
   .teammember-logo {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 350px;
     border-radius: 15%;
-    background-color:gray;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    
   }
   
   .slick-slide .teammember-info {

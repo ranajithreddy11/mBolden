@@ -17,7 +17,7 @@ import polygoninside from '../assets/images/Aboutpage/polygoninside.png';
 
 import alanbresgi from '../assets/images/Aboutpage/alanbresgi.png';
 import hadikiani from '../assets/images/Aboutpage/hadikiani.png';
-import karenkumakanga from '../assets/images/Aboutpage/karenkumakanga.png';
+import karenkumakanga from '../assets/images/Aboutpage/karenkumakanga.svg';
 
 
 
