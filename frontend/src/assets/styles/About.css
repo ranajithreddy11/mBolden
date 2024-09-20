@@ -812,255 +812,73 @@
   
 
 
+  
+
   .about-container-3 {
-   
     width: 100%;
-    height: 797px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    
+    
+  }
+  
+  .teammembers-section {
+    text-align: center;
+    
+  }
+  
+  .teammembers-carousel {
+  
+    border-radius: 15px;
+    border:1px solid black;
+    height:500px;
+    margin-top: 20px;
+    
+
+  }
+
+  .slick-slide .teammember{
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; /* Center the logo and info vertically */
+    width: 100%; /* Ensure full width */
     box-sizing: border-box;
-  }
-  
-  
- 
-  
-  
-  .contianer3-title h2{
-    width: 100%;
-    height: 56px;
-    font-family: 'Source Serif Pro', serif; 
-    font-size: 2.813rem; 
-    font-weight: 600;
-    line-height: 3.525rem; 
-    text-align: left;
-  }
-  
-  
-  .contianer3-section1 {
-    
-    
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    height: 261px;
-    align-items: center;
-    justify-content:space-around;
-    
-   
-  }
-
-
-  .contianer3-section2 {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height: 261px;
+    padding: 20px;
     
   }
   
-  .contianer3-team-member-1, 
-  .contianer3-team-member-2,
-  .contianer3-team-member-3{
-    display:flex;
-    max-width: 360px;
-    width:100%;
-    height: 261px;
+  .teammember-logo {
+    width: 400px;
+    height: 400px;
+    border-radius: 15%;
+    background-color:gray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slick-slide .teammember-info {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
     
-
-  }
   
-  .contianer3-team-member-1, .contianer3-team-member-2 {align-items: flex-end;}
-  .contianer3-team-member-3 {align-items: center;}
-  
-  
-  
-  .contianer3-member-photo1, 
-  .contianer3-member-photo2, 
-  .contianer3-member-photo3 {
-    height:238px;
-    max-width:100%;
-    border-radius: 50%;
-    background-color: lightgray;
-    box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.1); 
-    margin:auto;
-    
-  }
-
-  .orangecard,.pinkcard,.bluecard{   z-index:1;}
-  .bluecard{margin-bottom:-35%;}
-
-  
-  .contianer3-member1-info,
-  .contianer3-member2-info,
-  .contianer3-member3-info{
-    
-    max-width: 191px;
-    width:100%;
-    height: 138px;
-    display:flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    z-index:2;
   }
 
   
-  .contianer3-member1-info,
-  .contianer3-member2-info{margin-left:-50%;}
-  .contianer3-member3-info{margin-left:-50%; margin-bottom:-35%;}
-
-  
-  .contianer3-member1-info h3,
-  .contianer3-member2-info h3,
-  .contianer3-member3-info h3{
-    
-    display:flex;
-    max-width: 140px;
-    width:100%;
-    height: 24px;
-    font-family: 'Signika', sans-serif;
-    font-size: 1.5rem; 
-    font-weight: 500;
-    line-height: 1.505rem; 
-    letter-spacing: 0.01em; 
-    text-align: left;
-    color: white;
-    margin:auto;
-  }
-
-
-  
-  .contianer3-member1-info p,
-  .contianer3-member2-info p,
-  .contianer3-member3-info p{
-   
-    display:flex;
-    max-width: 173px;
-    width:100%;
-    height: 32px;
-    font-family: 'Inter', sans-serif; 
-    font-size: 0.8125rem; 
-    font-weight: 400;
-    line-height: 0.98rem; 
-    text-align: left;
-    color: white;
-    margin:auto;
-    
-  }
-  
-  
-  
- 
-  @media (max-width: 875px) {
-    .about-container-3 { flex-wrap: nonwrap;  height: auto; gap:15rem; margin-bottom:10%;}
-  
-    .contianer3-title h2 { font-size: 4.5rem; line-height: 3rem; margin-bottom:0%; text-align: center; }
-  
-    .contianer3-section1, .contianer3-section2 {  gap:15rem; height: auto; justify-content: center;}
-
-
-    .contianer3-team-member-1, .contianer3-team-member-3, .contianer3-team-member-2{ margin-left:2%;}
-  .contianer3-member-photo1,  .contianer3-member-photo3{ width: 70%; margin-left:-24%; height:auto;}
-  .contianer3-member-photo2{margin-left:-24%; width: 70%;height:auto;}
-
-  .orangecard,.pinkcard,.bluecard{width:50%;height:auto;z-index:1;}
-  .bluecard{margin-top:-5%;}
-
-  .contianer3-member1-info, .contianer3-member2-info{margin-bottom:-5%; margin-left:-50%;}
-
-  .contianer3-member3-info{ margin-top:10%; margin-left:-50%;}
-
-
-  .contianer3-member1-info h3,  .contianer3-member2-info h3,.contianer3-member3-info h3{ font-size: 2.0rem;}
-    
-  .contianer3-member1-info p, .contianer3-member2-info p,.contianer3-member3-info p{
-    font-size: 1.4rem;
-    line-height: 1.3rem;
-    margin:0;
-    margin-left:10%;
-  }
-
-
-
-
-  }
-  
- 
- 
- 
-
-  @media (max-width: 745px) {
-  .contianer3-member-photo1,.contianer3-member-photo3{margin-left:-10%;}
-  }
-
-  
-  
- 
-  
-
-@media (max-width: 768px)  {
-    
-  .contianer3-team-member-1, .contianer3-team-member-3, .contianer3-team-member-2{ margin-left:2%; }
-  .contianer3-member-photo1,  .contianer3-member-photo3{ width: 70%; margin-left:-24%; height:auto;}
-  .contianer3-member-photo2{margin-left:-24%; width: 70%;height:auto;}
-
-  .orangecard,.pinkcard,.bluecard{width:50%;height:auto;z-index:1;}
-  .bluecard{margin-top:-5%;}
-
-  .contianer3-member1-info, .contianer3-member2-info{margin-bottom:-5%; margin-left:-50%;}
-
-  .contianer3-member3-info{ margin-top:10%; margin-left:-50%;}
-
-
-  .contianer3-member1-info h3,  .contianer3-member2-info h3,.contianer3-member3-info h3{ font-size: 1.7rem;margin-left:5%;}
-  
-  .contianer3-member1-info p, .contianer3-member2-info p,.contianer3-member3-info p{
-    font-size: 1.2rem; margin-left:5%;
-  }
-
+  .teammember-carousel .slick-dots {
+    bottom: 20%; /* Position of the dots */
 }
-
-
-@media (max-width: 650px) 
-  {  .contianer3-member1-info h3,  .contianer3-member2-info h3{ margin-top:20%;}
-   .contianer3-member1-info p,  .contianer3-member2-info p{ margin-top:-20%;}
   
+
+  .slick-prev:before, .slick-next:before {
+    color: black;
   }
-
-
-  @media (max-width: 590px) 
-  {  .contianer3-member1-info h3,  .contianer3-member2-info h3{ margin-top:20%;}
-   .contianer3-member1-info p,  .contianer3-member2-info p{ margin-top:-20%;}
-   
   
+  .slick-dots li button:before {
+    color: #000;
+  }
   
+  .slick-dots li.slick-active button:before {
+    color: #4CAF50;
   }
-
-
-
-  @media (max-width: 480px)  {
-    
-    .contianer3-team-member-1, .contianer3-team-member-3, .contianer3-team-member-2{ margin-left:0%; }
-    .contianer3-member-photo1,  .contianer3-member-photo3{ width: 70%; margin-left:-27%; height:auto;}
-    .contianer3-member-photo2{margin-left:-27%; width: 70%;height:auto;}
-
-    .orangecard,.pinkcard,.bluecard{width:50%;height:auto;z-index:1;}
-    .bluecard{margin-top:5%;}
-
-    .contianer3-member1-info, .contianer3-member2-info{margin-bottom:-5%; margin-left:-50%;}
-
-    .contianer3-member3-info{ margin-top:30%; margin-left:-50%;}
-
-
-    .contianer3-member1-info h3,  .contianer3-member2-info h3,.contianer3-member3-info h3{ font-size: 1.5rem;}
-    
-    .contianer3-member1-info p, .contianer3-member2-info p,.contianer3-member3-info p{
-      font-size: 1rem;
-    }
-  }
-
-
+  

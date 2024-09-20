@@ -19,11 +19,46 @@ import alanbresgi from '../assets/images/Aboutpage/alanbresgi.png';
 import hadikiani from '../assets/images/Aboutpage/hadikiani.png';
 import karenkumakanga from '../assets/images/Aboutpage/karenkumakanga.png';
 
-import orangecard from '../assets/images/Aboutpage/orangecard.png';
-import pinkcard from '../assets/images/Aboutpage/pinkcard.png';
-import bluecard from '../assets/images/Aboutpage/bluecard.png';
+
+
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const About = () => {
+
+
+    
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,   // Number of testimonials to show at once
+        slidesToScroll: 1, // Scroll one testimonial at a time
+        autoplay: true,    // Automatically move to next slide
+        autoplaySpeed: 3000,
+        arrows: false,     // Hide next/prev arrows
+
+        responsive: [
+            {
+                breakpoint: 1024, // iPads and smaller devices
+                settings: {
+                    slidesToShow: 1, // Show 2 testimonials on iPads
+                    slidesToScroll: 1,
+                    infinite: true,  // Keep looping
+                },
+            },
+            {
+                breakpoint: 768, // Mobile devices
+                settings: {
+                    slidesToShow: 1, // Show 1 testimonial on mobile
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+        ],
+    };
+
 
     const services = [
         {
@@ -62,21 +97,7 @@ const About = () => {
         ]
     };
 
-    const teamMembers = [
-        {
-            name: "Alan Bresgi",
-            position: "Senior Consulting Manager, Head of Communications",
-            photo: alanbresgi, // Replace with actual path to image
-        }, {
-            name: "Hadi Kiani",
-            position: "Consultant",
-            photo: hadikiani, // Replace with actual path to image
-        }, {
-            name: "Karen Kumakanga",
-            position: "Africa Market Lead Consultant",
-            photo: karenkumakanga, // Replace with actual path to image
-        }
-    ];
+   
 
     return (
 
@@ -226,64 +247,43 @@ const About = () => {
             </div>
 
             <div className="about-container-3">
-                <div className="contianer3-title">
-                    <h2>100% Women Owned Business</h2>
-                </div>
 
-                <div className="contianer3-section1">
 
-                    <div className="contianer3-team-member-1">
+            <div className="teammembers-section">
+                <h2>Our Team</h2>
+                <Slider {...settings} className="teammembers-carousel">
+                
+                    <div className="teammember">
 
-                        <img src={orangecard} alt="orangecard" className="orangecard"/>
+                        <img src={alanbresgi} alt="alanbresgi" className="teammember-logo" />
 
-                        <div className="contianer3-member1-info">
-                            <h3>{teamMembers[0].name}</h3>
-                            <p>{teamMembers[0].position}</p>
+                        <div className="teammember-info">
+                                     <h1 className="teammember-heading">Alan Bresgi</h1>
+                                      <h4>Senior Consulting Manager Head of Communications</h4>
                         </div>
-                        <img
-                            src={teamMembers[0].photo}
-                            alt={teamMembers[0].name}
-                            className="contianer3-member-photo1"/>
 
                     </div>
 
-                    <div className="contianer3-team-member-2">
-                        <img src={pinkcard} alt="pinkcard" className="pinkcard"/>
-                        <div className="contianer3-member2-info">
-
-                            <h3>{teamMembers[1].name}</h3>
-                            <p>{teamMembers[1].position}</p>
-
+                   
+                   
+                    <div className="teammember">
+                        <img src={hadikiani} alt="hadikiani" className="teammember-logo" />
+                        <div className="teammember-info">
+                        <h1 className="teammember-heading">Hadi Kiani</h1>
+                        <h4>Consultant</h4>
                         </div>
-                        <img
-                            src={teamMembers[1].photo}
-                            alt={teamMembers[1].name}
-                            className="contianer3-member-photo2"/>
-
                     </div>
-
-                </div>
-
-                <div className="contianer3-section2">
-
-                    <div className="contianer3-team-member-3">
-                        <img src={bluecard} alt="bluecard" className="bluecard"/>
-                        <div className="contianer3-member3-info">
-
-                            <h3>{teamMembers[2].name}</h3>
-                            <p>{teamMembers[2].position}</p>
-
+                    <div className="teammember">
+                        <img src={karenkumakanga} alt="karenkumakanga" className="teammember-logo" />
+                        <div className="teammember-info">
+                        <h1 className="teammember-heading">Karen Kumakanga</h1>
+                        <h4>Africa Market Lead Consultant</h4>
                         </div>
-                        <img
-                            src={teamMembers[2].photo}
-                            alt={teamMembers[2].name}
-                            className="contianer3-member-photo3"/>
-
                     </div>
-
-                </div>
-
+                </Slider>
             </div>
+
+               </div>
 
         </div>
 
