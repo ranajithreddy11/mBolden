@@ -68,7 +68,7 @@ const About = () => {
 
     const teamMember3 = {
         name: "Alan Bresgi",
-        title: "Senior, Consulting Manager, Head of Communications",
+        title: "Senior Manager and Head of Communications",
         imageUrl: alanbresgi // Ensure this path is correct
     
     };
@@ -95,7 +95,7 @@ const About = () => {
                             workforce dynamics, and the constant need for innovation.
                         </p>
                         <p>
-                            At mBolden we strive to bring your vision to life through our 'values-Based
+                            At mBolden we strive to bring your vision to life through our 'Values-Based
                             Transformation' approach. Our method combines strategic foresight with a
                             thorough comprehension of your organizational culture, enabling us to not only
                             predict trends but also to help shape them.
@@ -205,15 +205,6 @@ const About = () => {
                         <p> Dom excels at simplifying complex situations to their root challenges and getting all stakeholders to row in the same direction when solving them. </p>
                         <p> He is passionate about fostering a growth mindset and ensuring that people are at the centre of strategy. </p>
                         <p>Dom is a father of two, an avid skier, racetrack instructor, cyclist, recovering golfer, and musician.</p>
-
-
-
-
-                        
-                       
-                       
-
-
 
                     </div>
                 </div>
