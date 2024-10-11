@@ -201,10 +201,20 @@ const About = () => {
                 <div className="container3-card2">
                    
                     <div className="container3-description">
-                        <p>Alan brings over 18 years of experience leading corporate communications, internal communications, change management, employee engagement, DE&I, CSR/sustainability, and stakeholder relations.</p>
-                        <p> His passion lies in shaping workplace culture and fostering employee engagement. </p>
-                        <p>  From his roles at Takeda Pharmaceutical, British American Tobacco, Triumph International and Philip Morris International, he has consistently delivered results, leading communications, digital communication transformation, people engagement, change management, and innovation.</p>
-                        <p>Alan is fluent in Japanese and is a data-driven storyteller with an MBA from the Kellogg School of Management.</p>
+                        <p>Dom is a business strategist and people & culture leader with experience at Deloitte, BMO, Ford, TELUS, and most recently as the Chief Strategy Officer, Head of Talent, and Head of Marketing for a leading capital markets firm. He collaboratively works with leadership teams globally, helping them to craft and implement their vision, and enjoys rolling up his sleeves to do so. </p>
+                        <p> Dom excels at simplifying complex situations to their root challenges and getting all stakeholders to row in the same direction when solving them. </p>
+                        <p> He is passionate about fostering a growth mindset and ensuring that people are at the centre of strategy. </p>
+                        <p>Dom is a father of two, an avid skier, racetrack instructor, cyclist, recovering golfer, and musician.</p>
+
+
+
+
+                        
+                       
+                       
+
+
+
                     </div>
                 </div>
             </div>
