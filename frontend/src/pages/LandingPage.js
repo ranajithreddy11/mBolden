@@ -61,6 +61,7 @@ const LandingPage = () => {
         autoplaySpeed: 0,       // Zero delay for continuous effect
         cssEase: "linear",      // Ensures smooth scrolling
         pauseOnHover: false,
+        arrows: false,
     };
 
 
