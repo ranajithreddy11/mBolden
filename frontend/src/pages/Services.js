@@ -4,9 +4,6 @@ import Planning from '../assets/images/Services/Planning.svg';
 import Training from '../assets/images/Services/Training.svg';
 import Leadership from '../assets/images/Services/Leadership.svg';
 import Diversity from '../assets/images/Services/Diversity.svg';
-import Team from '../assets/images/Services/Team.svg';
-import Heart from '../assets/images/Services/Heart.svg';
-import Plant from '../assets/images/Services/Plant.svg';
 
 const Services = () => {
     return (
@@ -50,19 +47,33 @@ const Services = () => {
             <section className="mission-section">
                 <div className="section-heading">
                     <h2>Our Mission</h2>
+                    <div className=' sub-heading'>
+                    <p>At mBolden, we empower organizations to lead transformative change with confidence and purpose.</p>
+                    </div>
                 </div>
                 <div className="mission-statements">
                     <div className="mission">
-                        <img src={Team} alt="Begin with you"/>
-                        <p>We begin with you.</p>
+                        <h3>Align Strategy and Innovation</h3>
+                        <p>We seamlessly integrate cutting-edge technologies with strategic vision, ensuring our clients stay ahead in a rapidly evolving business landscape.</p>
                     </div>
                     <div className="mission">
-                        <img src={Heart} alt="Collaborate"/>
-                        <p>We collaborate and empathize.</p>
+                        <h3>Foster Dynamic Leadership</h3>
+                        <p>We cultivate adaptive leadership skills that inspire and guide teams through complex transformations.</p>
                     </div>
                     <div className="mission">
-                        <img src={Plant} alt="Growth and Inclusivity"/>
-                        <p>We are committed to growth and Inclusivity.</p>
+                        <h3>Create Thriving Workplace Cultures</h3>
+                        <p>We build resilient, inclusive, and high-performing organizational cultures that embrace change and drive innovation.</p>
+                    </div>
+                    <div className="mission">
+                        <h3>Enhance Agile Communication</h3>
+                        <p>We develop robust communication frameworks that facilitate transparency, collaboration, and rapid decision-making.</p>
+                    </div>
+                    <div className="mission">
+                        <h3>Build Future-Ready Teams</h3>
+                        <p>We equip teams with the skills, mindset, and tools needed to navigate uncertainty and seize emerging opportunities.</p>
+                    </div>
+                    <div className='text-end'>
+                    <h4>By partnering with mBolden, organizations not only set the pace for transformation but also achieve sustainable success in an ever-changing world. Our holistic approach ensures that our clients are not just prepared for the future – they're actively shaping it.</h4>
                     </div>
                 </div>
             </section>
