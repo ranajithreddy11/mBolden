@@ -37,9 +37,9 @@ app.post('/api/results', async (req, res) => {
     let description = '';
     if (score >= 16 && score <= 20) {
         description = 'is Excellent. Your internal communications are well-developed and effective.';
-    } else if (score >= 8 && score <= 15) {
+    } else if (score >= 11 && score <= 15) {
         description = "is Good, but there's room for improvement. Consider reviewing specific areas for enhancement.";
-    } else if (score >= 0 && score <= 7) {
+    } else if (score >= 0 && score <= 10) {
         description = 'needs Improvement. A comprehensive internal communications diagnostic is recommended.';
     } else {
         return res.status(400).send('Invalid score');

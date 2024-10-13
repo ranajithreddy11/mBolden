@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '../assets/styles/Footer.css';
+import Logo from '../assets/images/Logo.png'
 import facebook from '../assets/images/Facebook.svg';
 import linkedin from '../assets/images/LinkedIn.svg';
 import instagram from '../assets/images/Instagram.svg';
@@ -10,14 +11,17 @@ const Footer = () => {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-logo">
-                    <Link to="/">mBolden</Link>
+                    <a href="/" className='logo-foot'>
+                        <img src={Logo} alt="Logo"/>
+                    </a>
                 </div>
                 <div className="footer-nav-container">
                     <div className="footer-copyright">
                         <div>
-                            <span class="logo">mBolden. </span>
-                            <span class="copyright">
-                                All rights reserved.</span>
+                            <a href="/" className='logo-foot'>
+                                <img src={Logo} alt="Logo"/>
+                            </a>
+                            <span class="copyright">&copy; 2023. All rights reserved.</span>
                         </div>
                     </div>
                     <nav className="footer-nav">

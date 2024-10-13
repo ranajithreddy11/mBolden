@@ -977,6 +977,7 @@
 
   .container3-description {font-size: 1.25rem;line-height: 2rem; height:fit-content;}
 
+
   .container3-description P{text-align: center;}
 
   .container3-card2 h2 { font-size: 3.5rem;  line-height: 4rem;  text-align: center; 
@@ -994,4 +995,6 @@
   
 
       .container2-social-links { flex-wrap: wrap;  gap: 20px;  margin-left: 10%;}
+
 }
+

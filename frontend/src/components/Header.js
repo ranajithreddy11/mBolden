@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/Header.css';
+import Logo from '../assets/images/Logo.png'
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -15,9 +16,9 @@ const Header = () => {
             <div className={`overlay ${isMenuOpen ? 'open' : ''}`} onClick={toggleMenu}></div>
             <header className="header">
                 <div className="header-container">
-                    <div className="header-logo">
-                        <Link to="/">mBolden</Link>
-                    </div>
+                    <a href="/" className='logo'>
+                        <img src={Logo} alt="Logo"/>
+                    </a>
                     <div className="hamburger" onClick={toggleMenu}>
                         {isMenuOpen ? <FaTimes /> : <FaBars />}
                     </div>
