@@ -68,7 +68,7 @@ const About = () => {
 
     const teamMember3 = {
         name: "Alan Bresgi",
-        title: "Senior Manager and Head of Communications",
+        title: "Senior Director and Head of Communications",
         imageUrl: alanbresgi // Ensure this path is correct
     
     };
