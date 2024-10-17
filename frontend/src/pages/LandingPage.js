@@ -13,9 +13,9 @@ import LinkedInIcon from '../assets/images/LinkedIn.svg';
 import logo1 from '../assets/images/LandingPage/Logo1.png';
 import logo2 from '../assets/images/LandingPage/Logo2.png';
 import logo3 from '../assets/images/LandingPage/Logo3.png';
-import PatsClientLogo1 from '../assets/images/LandingPage/PastClientLogo1.png';
-import PatsClientLogo2 from '../assets/images/LandingPage/PastClientLogo2.png';
-import PatsClientLogo3 from '../assets/images/LandingPage/PastClientLogo3.png';
+import PastClientLogo1 from '../assets/images/LandingPage/PastClientLogo1.png';
+import PastClientLogo2 from '../assets/images/LandingPage/PastClientLogo2.png';
+import PastClientLogo3 from '../assets/images/LandingPage/PastClientLogo3.png';
 import PastClientLogo4 from '../assets/images/LandingPage/PastClientLogo4.png';
 import heroVideo from '../assets/images/LandingPage/hero.mp4'
 
@@ -49,6 +49,19 @@ const LandingPage = () => {
                 },
             },
         ],
+    };
+
+    const logoCarouselSettings = {
+        dots: false,
+        infinite: true,
+        speed: 5000,            // Speed of the transition - slower can be smoother
+        slidesToShow: 4,        // Adjust based on your needs
+        slidesToScroll: 1,      // Moves one slide at a time
+        autoplay: true,
+        autoplaySpeed: 0,       // Zero delay for continuous effect
+        cssEase: "linear",      // Ensures smooth scrolling
+        pauseOnHover: false,
+        arrows: false,
     };
 
 
@@ -92,7 +105,7 @@ const LandingPage = () => {
                     <p>
                     Discover the impact of your communication strategies with <b>Capture</b>, our free Internal Communications Diagnostic Survey. In just 5 minutes, identify strengths, uncover opportunities for improvement, and gain actionable insights to boost team collaboration and engagement.
                     </p>
-                    <p>As a bonus, you'll <b>receive a complimentary Internal Communications Action Plan template with your results</b>, empoweing you to take immediate, effective steps.</p>
+                    <p>As a bonus, you'll <b>receive a complimentary Internal Communications Action Plan template with your results</b>, empowering you to take immediate, effective steps.</p>
                     <Link to="/capture">
                         <button className="get-started-button">Start Now</button>
                     </Link>
@@ -106,15 +119,18 @@ const LandingPage = () => {
                 <Slider {...settings} className="testimonials-carousel">
                     <div className="testimonial">
                         <img src={logo1} alt="Logo1" className="testimonial-logo" />
-                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
+                        <h3>"They aligned or leaders”</h3>
+                        <p>“mBolden helped us prepare for the new year, building our strategy, plan, and success measures. They aligned our leaders on what we need to achieve and how we'll do it. The facilitation was seamless and the team was helpful and knowledgeable. Their real-world experience was amazing."</p>
                     </div>
                     <div className="testimonial">
                         <img src={logo2} alt="Logo2" className="testimonial-logo" />
-                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
+                        <h3>“Thanks for the great advice…”</h3>
+                        <p>"Thanks mBolden for the great advice and support around business growth and team planning. Combining long-term vision with short-term goals lets me know we're headed in the right direction. You really care, not just about the business, but about the people behind it too. Looking forward to continuing our work together!"</p>
                     </div>
                     <div className="testimonial">
                         <img src={logo3} alt="Logo3" className="testimonial-logo" />
-                        <p>"The advice and project support from mBolden was instrumental in helping us build a more effective team. Their insight into our strategy and execution elevated our engagement and impact greatly. We would recommend mBolden for any consulting projects."</p>
+                        <h3>“Our experience was great”</h3>
+                        <p>“The advice and project support from mBolden was instrumental in helping us build a new service offering. They listened to what we wanted and then delivered it. Our experience was great. We would recommend mBolden without hesitation for any consulting projects."</p>
                     </div>
                 </Slider>
             </div>
@@ -125,11 +141,13 @@ const LandingPage = () => {
                     <p>Join Companies who have <br />made <span className="bold-text">BOLD</span> moves with us.</p>
                 </div>
             </div>
-                <div className='past-client-container'>
-                <img src={PatsClientLogo1} alt="Team" className="past-client-logo-image" />
-                <img src={PatsClientLogo2} alt="Team" className="past-client-logo-image" />
-                <img src={PatsClientLogo3} alt="Team" className="past-client-logo-image" />
-                <img src={PastClientLogo4} alt="Team" className="past-client-logo-image" />
+            <div class="past-client-container">
+                <Slider {...logoCarouselSettings}>
+                    <div><img src={ PastClientLogo1} alt="Client Logo 1"/></div>
+                    <div><img src={ PastClientLogo2}  alt="Client Logo 2"/></div>
+                    <div><img src={ PastClientLogo3}  alt="Client Logo 3"/></div>
+                    <div><img src={ PastClientLogo4}  alt="Client Logo 4"/></div>
+                </Slider>
             </div>
         </div>
     );

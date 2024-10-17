@@ -31,7 +31,7 @@
             "type": "multiple",
             "options": [
               { "text": "Intranet", "points": 2 },
-              { "text": "EMAIL", "points": 2 },
+              { "text": "Email", "points": 2 },
               { "text": "Internal Social Network", "points": 1 },
               { "text": "Instant messaging app", "points": 1 },
               { "text": "None", "points": 0 }
@@ -43,7 +43,8 @@
             "options": [
               { "text": "Very effective", "points": 2 },
               { "text": "Moderately effective", "points": 1 },
-              { "text": "Not effective", "points": 0 }
+              { "text": "Not effective", "points": 0 },
+              { "text": "I don't know", "points": 0 }
             ]
           }
         ]
@@ -55,8 +56,9 @@
             "question": "How often do employees receive communications from senior leadership?",
             "type": "single",
             "options": [
-              { "text": "Weekly", "points": 2 },
               { "text": "Monthly", "points": 1 },
+              { "text": "Weekly", "points": 2 },
+              { "text": "Daily", "points": 2 },
               { "text": "Rarely/Never", "points": 0 }
             ]
           },
@@ -80,7 +82,8 @@
             "options": [
               { "text": "Very relevant", "points": 2 },
               { "text": "Somewhat relevant", "points": 1 },
-              { "text": "Not relevant", "points": 0 }
+              { "text": "Not relevant", "points": 0 },
+              { "text": "I don't know", "points": 0 }
             ]
           },
           {
@@ -89,7 +92,8 @@
             "options": [
               { "text": "Very clear", "points": 2 },
               { "text": "Somewhat clear", "points": 1 },
-              { "text": "Not clear", "points": 0 }
+              { "text": "Not clear", "points": 0 },
+              { "text": "I don't know", "points": 0 }
             ]
           }
         ]

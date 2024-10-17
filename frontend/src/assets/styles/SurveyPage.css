@@ -3,9 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  min-height: 100vh;
   padding: 5% 12%;
   box-sizing: border-box;
-  min-height: 65vh;
 }
 
 .internalcommunication {
@@ -43,7 +43,7 @@
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin: 2.5rem 0 1.8rem 0;
+  margin: 2.5rem 0;
 }
 
 /* Two-column layout for options */
@@ -89,8 +89,8 @@ input[type="checkbox"] {
   width: 100%;
 }
 
-.next, .previous {
-  border-radius: 0.7rem;
+.next {
+  border-radius: 1rem;
   cursor: pointer;
   text-decoration: none;
   width: 30%;
@@ -105,14 +105,9 @@ input[type="checkbox"] {
   padding: 0.7rem 0;
 }
 
-.next:hover, .previous:hover {
+.next:hover {
   background-color: #2F5E8F;
   color: #fff;
-}
-
-.form-error-message{
-  margin-top:0;
-  color: red;
 }
 
 @media (max-width: 1024px) {
@@ -136,10 +131,6 @@ input[type="checkbox"] {
       font-size: 10px;
   }
 
-  .survey-container{
-    padding: 8% 12%;
-  }
-
   .options-single-column{
     width: 100%;
   }
@@ -148,7 +139,7 @@ input[type="checkbox"] {
     text-align: center;
   }
 
-  .next, .previous{
+  .next{
     width: 40%;
   }
 

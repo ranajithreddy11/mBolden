@@ -54,9 +54,9 @@ const Results = () => {
                     <div className="results-text-box">
                         <h1>Your Result: {totalScore}</h1>
                         <div className="results-score-box">
+                            <div className="score-box poor">0-10<br />Poor</div>
+                            <div className="score-box good">11-15<br />Good</div>
                             <div className="score-box excellent">16-20<br />Excellent</div>
-                            <div className="score-box good">8-15<br />Good</div>
-                            <div className="score-box poor">0-7<br />Poor</div>
                         </div>
                         <p>To see your detailed insights gained from the diagnostic and find out more ways to level up your internal communications strategy through our free Action Plan Template, click below! To assist you in leveraging the insights gained from this tool, we have included an Action Plan Template with your report. This template guides you through developing a structured plan to address the identified careas for improvement. We have made sure you have a clear path forward</p>
                         <p>We are here to support you through every step of this process. To schedule a consultation to discuss your results in more detail, please do not hesitate to contact us.</p>

@@ -8,6 +8,25 @@
     padding: 3.125rem 5rem;
 }
 
+
+.sub-heading{
+    width: 70%;
+    margin: 0 auto;
+}
+.text-end{
+    width: 90%;
+    margin: 0 auto;
+}
+.text-end h4{
+    margin-top: 3rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    text-align: center;
+    color: #030701;
+    margin: 2rem 0 1rem;
+}
 .services-section h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 3.5rem;
@@ -31,7 +50,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 3.125rem 5rem;
+    padding: 1rem 5rem;
 }
 
 .service {
@@ -79,18 +98,41 @@
     margin-bottom: 1.25rem;
 }
 
+.mission-section p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: center;
+    color: #030701;
+    margin: 0 0 1rem;
+}
+
 .mission-statements {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 3.125rem 5rem;
+    padding: 0 5rem 3.125rem 5rem;
+
 }
 
 .mission {
     width: 350px;
     margin: 1.25rem;
     text-align: center;
+
+    border: 1px solid #2F5E8F;
+    box-shadow: 0 0 20px 0 #0000001A;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #edf3f7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.mission:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 
 .mission img {
     width: 6.25rem;
@@ -100,8 +142,18 @@
 .mission p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
-    font-weight: 500;
-    line-height: 2rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-align: center;
+    color: #0F172A;
+}
+
+.mission h3 {
+    margin: 1.25rem 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.2rem;
     text-align: center;
     color: #0F172A;
 }
@@ -113,6 +165,10 @@
 @media (max-width: 480px) {
     :root {
         font-size: 12px;
+    }
+    .sub-heading{
+        width: 100%;
+        margin: 0 auto;
     }
 
     .services-section h2 {
