@@ -5,11 +5,12 @@ import 'slick-carousel/slick/slick-theme.css';
 import '../assets/styles/LandingPage.css';
 import { Link } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
+
 // Import images
 import captureImage2 from '../assets/images/LandingPage/capture-image2.png';
-import FacebookIcon from '../assets/images/Facebook.svg';
-import InstaIcon from '../assets/images/Instagram.svg';
-import LinkedInIcon from '../assets/images/LinkedIn.svg';
 import logo1 from '../assets/images/LandingPage/Logo1.png';
 import logo2 from '../assets/images/LandingPage/Logo2.png';
 import logo3 from '../assets/images/LandingPage/Logo3.png';
@@ -17,6 +18,16 @@ import PastClientLogo1 from '../assets/images/LandingPage/PastClientLogo1.png';
 import PastClientLogo2 from '../assets/images/LandingPage/PastClientLogo2.png';
 import PastClientLogo3 from '../assets/images/LandingPage/PastClientLogo3.png';
 import PastClientLogo4 from '../assets/images/LandingPage/PastClientLogo4.png';
+import PastClientLogo5 from '../assets/images/LandingPage/PastClientLogo5.webp';
+import PastClientLogo6 from '../assets/images/LandingPage/PastClientLogo6.png';
+import PastClientLogo7 from '../assets/images/LandingPage/PastClientLogo7.png';
+import PastClientLogo9 from '../assets/images/LandingPage/PastClientLogo9.jpg';
+import PastClientLogo10 from '../assets/images/LandingPage/PastClientLogo10.jpeg';
+import PastClientLogo11 from '../assets/images/LandingPage/PastClientLogo11.jpg';
+import PastClientLogo12 from '../assets/images/LandingPage/PastClientLogo12.png';
+import PastClientLogo13 from '../assets/images/LandingPage/PastClientLogo13.png';
+import PastClientLogo14 from '../assets/images/LandingPage/PastClientLogo14.png';
+import PastClientLogo15 from '../assets/images/LandingPage/PastClientLogo15.svg';
 import heroVideo from '../assets/images/LandingPage/hero.mp4'
 
 const LandingPage = () => {
@@ -78,14 +89,14 @@ const LandingPage = () => {
                         <button href="/about" className="learn-more-button">Learn More</button>
                     </Link>
                     <div className="social-icons">
-                        <a href="https://www.linkedin.com/company/mbolden-consulting/" target="_blank" rel="noreferrer noopener">
-                            <img src={LinkedInIcon} alt="LinkedIn" />
+                        <a href="https://www.facebook.com/profile.php?id=61557755199538" target="_blank" rel="noopener noreferrer" className="social-icon-landing">
+                            <FontAwesomeIcon icon={faFacebookF} />
                         </a>
-                        <a href="https://www.instagram.com/mbolden_consulting" target="_blank" rel="noreferrer noopener">
-                            <img src={InstaIcon} alt="Instagram" />
+                        <a href="https://www.linkedin.com/company/mbolden-consulting/" target="_blank" rel="noopener noreferrer" className="social-icon-landing">
+                            <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
-                        <a href="https://www.facebook.com/profile.php?id=61557755199538" target="_blank" rel="noreferrer noopener">
-                            <img src={FacebookIcon} alt="Facebook" />
+                        <a href="https://www.instagram.com/mbolden_consulting" target="_blank" rel="noopener noreferrer" className="social-icon-landing">
+                            <FontAwesomeIcon icon={faInstagram} />
                         </a>
                     </div>
                 </div>
@@ -147,6 +158,16 @@ const LandingPage = () => {
                     <div><img src={ PastClientLogo2}  alt="Client Logo 2"/></div>
                     <div><img src={ PastClientLogo3}  alt="Client Logo 3"/></div>
                     <div><img src={ PastClientLogo4}  alt="Client Logo 4"/></div>
+                    <div><img src={ PastClientLogo5} alt="Client Logo 5"/></div>
+                    <div><img src={ PastClientLogo6}  alt="Client Logo 6"/></div>
+                    <div><img src={ PastClientLogo7}  alt="Client Logo 7"/></div>
+                    <div><img src={ PastClientLogo9} alt="Client Logo 9"/></div>
+                    <div><img src={ PastClientLogo10}  alt="Client Logo 10"/></div>
+                    <div><img src={ PastClientLogo11}  alt="Client Logo 11"/></div>
+                    <div><img src={ PastClientLogo12}  alt="Client Logo 12"/></div>
+                    <div><img src={ PastClientLogo13} alt="Client Logo 13"/></div>
+                    <div><img src={ PastClientLogo14}  alt="Client Logo 14"/></div>
+                    <div><img src={ PastClientLogo15}  alt="Client Logo 15"/></div>
                 </Slider>
             </div>
         </div>

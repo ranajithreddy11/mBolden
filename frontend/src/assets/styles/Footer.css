@@ -53,20 +53,36 @@
     color: #F9530F;
 }
 
+/* SocialMediaIcons.css */
 .footer-social {
     display: flex;
 }
 
 .social {
     display: flex;
-    gap: 20px;
+    gap: 1.8rem;
     margin-left: auto;
 }
 
-.footer-social img {
-    width: 48px;
-    height: 48px;
+.social-icon {
+    background-color: white;
+    border-radius: 50%;
+    width: 2.9rem;
+    height: 2.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F5E8F;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+.social-icon:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
+
 
 .logo img{
     width: 35%;

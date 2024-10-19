@@ -3,7 +3,6 @@ import './../assets/styles/Services.css';
 import Planning from '../assets/images/Services/Planning.svg';
 import Training from '../assets/images/Services/Training.svg';
 import Leadership from '../assets/images/Services/Leadership.svg';
-import Diversity from '../assets/images/Services/Diversity.svg';
 
 const Services = () => {
     return (
@@ -32,13 +31,6 @@ const Services = () => {
                         <h3>Leadership & Team Alignment</h3>
                         <p>Enhancing capabilities to unblock issues, celebrate success, and build
                             confidence to create aligned, engaged, and empowered organizations.</p>
-                    </div>
-                    <div className="service">
-                        <img src={Diversity} alt="Diversity Inclusion"/>
-                        <h3>Diversity, Equity, Inclusion, & Belonging</h3>
-                        <p>Creating an inclusive work environment helps attract top talent and foster
-                            diverse and engaged workforce, which is necessary for teams to reach their full
-                            potential.</p>
                     </div>
                 </div>
             </section>
