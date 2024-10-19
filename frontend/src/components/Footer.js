@@ -1,10 +1,10 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import '../assets/styles/Footer.css';
-import Logo from '../assets/images/Logo.png'
-import facebook from '../assets/images/Facebook.svg';
-import linkedin from '../assets/images/LinkedIn.svg';
-import instagram from '../assets/images/Instagram.svg';
+import Logo from '../assets/images/Logo.png';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, faLinkedinIn, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -35,9 +35,15 @@ const Footer = () => {
                 </div>
                 <div className="footer-social">
                     <div className="social">
-                        <a href="https://www.facebook.com/profile.php?id=61557755199538"><img src={facebook} alt="Facebook"/></a>
-                        <a href="https://www.linkedin.com/company/mbolden-consulting/"><img src={linkedin} alt="LinkedIn"/></a>
-                        <a href="https://www.instagram.com/mbolden_consulting"><img src={instagram} alt="Instagram"/></a>
+                        <a href="https://www.facebook.com/profile.php?id=61557755199538" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <FontAwesomeIcon icon={faFacebookF} />
+                        </a>
+                        <a href="https://www.linkedin.com/company/mbolden-consulting/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                        <a href="https://www.instagram.com/mbolden_consulting" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <FontAwesomeIcon icon={faInstagram} />
+                        </a>
                     </div>
                 </div>
             </div>

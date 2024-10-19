@@ -87,16 +87,32 @@
 
 .social-icons {
     margin-top: 1.25rem;
+    display: flex;
+}
+
+.social-icon-landing {
+    background-color: white;
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #2F5E8F;
+    font-size: 1.9rem;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon-landing:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
 }
 
 .social-icons a {
-    margin-right: 4rem;
+    margin-right: 3rem;
 }
 
-.social-icons img {
-    width: 4rem;
-    height: 4rem;
-}
 
 /* Capture Section */
 .capture-section {
